@@ -1,24 +1,73 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Redshift"
 date:   2014-03-13 09:43:29
-categories: jekyll update
+categories: redshift gamedev vim love2d programming
 ---
 
-You'll find this post in your `_posts` directory - edit this post and re-build (or run with the `-w` switch) to see your changes!
-To add new posts, simply add a file in the `_posts` directory that follows the convention: YYYY-MM-DD-name-of-post.ext.
+Hi, I'm Chuck. I'm a 14 year old developer, and I just released my first game, [Redshift](http://ninjacharlie.itch.io/redshift). 
+Redshift is an arcade-y neon shoot 'em up. In this article I'll be covering the tools I used to create it.
 
-Jekyll also offers powerful support for code snippets:
+## Love2D
+The game uses the [Love2D](http://love2d.org) game engine with scripting in Lua. Love2D is great for prototyping. However, it doesn't encourage good organization
+which ended up being an issue halfway through development. Lua doesn't have true object oriented programming, so I ended up repeating myself a lot. The code structure was a horrendous mess
+of giant tables and lots of `for` loops. I ended up refactoring the code and used a Lua [class library](https://github.com/kikito/middleclass), which helped out with code structure a lot.
+I still had to use tables to store instances of the classes (simply because of the design of the engine), but I at least had inheritance and mixins, and the resulting code was much cleaner.
 
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
+## Vim
+VIM is - in my opinion - the best text editor out there. It's fast, powerful and has a million different plugins.
+I've put my [.vimrc file on GitHub](https://github.com/charles-l/dotfiles/blob/master/.vimrc), but I'll give a
+quick rundown of the plugins I use.
 
-Check out the [Jekyll docs][jekyll] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll's GitHub repo][jekyll-gh].
+- __CTRL-P__: Allows you to fuzzy search for files in subdirectories.
+- __delimitMate__: Simply adds smart bracket completion.
+- __Nerdcommenter__: Powerful comment handling.
 
-[jekyll-gh]: https://github.com/mojombo/jekyll
-[jekyll]:    http://jekyllrb.com
+Other than the syntax highlighting, I didn't use anything Lua specific.
+
+## Git
+I use git for all my projects, and host my files on GitHub (for public projects) or BitBucket (for private projects).
+There are a few limits on how many users can access the repository if you use a private BitBucket repository, but since
+I was the only one working on Redshift, it didn't really matter.
+
+## The Good, the Bad and the Ugly.
+Since this was my first longterm game project, I didn't really know of a good plan of attack to follow. I just developed the game by the seat of my pants.
+
+### Things that went right
+- I'm really glad I decided to use Lua/Love2D for a few reasons:
+  - I know them really well, so I didn't have to learn how to use an engine/language before I even started development.
+  - You can develop very quickly with Lua.
+  - Love2D has a fairly large community that answered all my questions on the forums.
+- I picked a small enough project that I could actually finish development.
+- I managed to release version 1.0 (which has never happened before, except with my [Ludum Dare submission](https://github.com/charles-l/oneshotshowdown))
+
+### Things that went not so right
+- I didn't plan. This ended up being much more of a problem than I anticipated. Because:
+  - I ended up rewriting almost 50% of my codebase half way through the project because of refactoring, or because of deleting features.
+  - If I had planned the final result of the game, I could have finished in about 3 months instead of the 7 months it took.
+  - 6 months into the development cycle I still couldn't figure out how to add progression to the game, so it was more of a lame tech demo than a game.
+- I was originally going to make it open world, but had to scrap that idea later in development when I started fighting with the engine to try and make it work.
+
+### Things that just kind of happened
+- I created all the assets (art, sound, music)
+- I spent a lot of time coming up with really cool weapons (I didn't end up implementing them for version 1.0, but they may reappear in later versions.)
+- I spent a lot of time writing the AI. This isn't really good or bad, because I did enjoy writing it, but it did take a while to get it working right.
+
+### Suggestions
+If you're an indie, who is trying to release a game, or you're just interested in making a game, here are a few suggestions based on my experience with Redshift.
+
+- **Plan**<br/> You can see how much this screwed me over because I didn't. I wasted time and energy rewriting code. If I had planned a final result before haphazardly implementing features, I would have had a much smoother time.
+- **Write good code**<br/>It will seriously save your butt in the long run. Unless you're *really* on a time constraint, write solid code.
+- **Pick an engine and a language that you know, and are easy to work with**<br/>Many of my previously failed projects were because I was trying to make a game while simultaneously tried to learn a game engine. Write a few *very* simple projects in the engine before you start long term development.
+- **Create a game you can finish**<br/>Nothing's more frustrating than getting super excited that you're going to create the next Call of Duty and burning out when you make no headway. I would recommend sticking to a 2D top down or puzzle game to start. You're more likely to finish it.
+- **Polish the game til it shines**<br/>I can't necessarily say that Redshift is the most polished game ever, but it doesn't have any glaring bugs or graphics glitches. You'll be much happier with the result.
+
+
+Welp, that's all. I hope this will help a beginner to start out and will warn of some of the big pitfalls I fell in. As it's my first game, I've still got a *lot* to learn, but I'm still really happy I've done it. If you're interested in buying Redshift, you can use the widget below ;)
+
+Thanks for reading,<br/>
+\-Chuck
+
+<br/>
+<br/>
+<iframe src="//itch.io/embed/826" width="552" height="167" frameborder="0"></iframe>
