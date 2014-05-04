@@ -2,7 +2,7 @@
 layout: post
 title:  "Redshift"
 date:   2014-03-13 09:43:29
-categories: redshift gamedev vim love2d programming
+categories: gamedev
 ---
 
 Hi, I'm Chuck. I'm a 14 year old developer, and I just released my first game, [Redshift](http://ninjacharlie.itch.io/redshift). 

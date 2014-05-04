@@ -2,7 +2,7 @@
 layout: post
 title:  "Ludum Dare 29 Post Mortem"
 date:   2014-05-04 08:19:29
-categories: ludumdare gamedev vim love2d programming
+categories: gamedev
 ---
 [Play Ninja vs Worms!](http://www.ludumdare.com/compo/ludum-dare-29/?action=preview&uid=24096)
 

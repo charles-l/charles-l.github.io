@@ -20,7 +20,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: Monaco, monospace;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 100;
 }
 h1 {
   margin-bottom: 15px;
@@ -32,21 +33,33 @@ h2 {
 }
 
 h3 {
-  font-size: 15px;
+  font-size: 20px;
   font-weight: bold;
   margin-top: 20px;
   margin-bottom: 8px;
-}
-
-h4 {
-  font-size: 10px;
+  text-transform: uppercase;
 }
 
 p { margin: 1em 0; }
 
-a         { color: #00a; }
-a:hover   { color: #000; }
-a:visited { color: #a0a; }
+a {
+  color: #8085C1;
+  text-decoration: none;
+}
+a:hover {
+  color: #8085C1;
+  text-decoration: underline;
+}
+a:visited{
+  color: #8085C1;
+}
+
+hr {
+  margin-top: 10px;
+  border-style: none;
+  border-bottom: 4px #eee solid;
+  box-shadow: none;
+}
 
 /*****************************************************************************/
 /*
@@ -64,7 +77,6 @@ a:visited { color: #a0a; }
 
 .posts span {
   color: #aaa;
-  font-family: Monaco, monospace;
   font-size: 80%;
 }
 
@@ -78,35 +90,52 @@ a:visited { color: #a0a; }
   font-size: 115%;
   text-align: justify;
   width: 42em;
-  margin: 3em auto 2em;
+  margin: 0 auto 2em;
   line-height: 1.8em;
 }
-
+.header {
+  margin: 0 0 2em;
+  padding: 0;
+  height: 111px;
+  background-color: #111;
+  border-bottom: #AAA solid 2px;
+}
 .header a {
-  font-weight: bold;
+  font-weight: 100;
   text-decoration: none;
+}
+.header .wrapper {
+  padding: 32px 0;
+  margin: 0 auto;
+  width: 48em;
+  text-align: left;
 }
 
 .title {
   display: inline-block;
-  margin-bottom: 2em;
+  margin-bottom: 0;
 }
 
 .title a {
-  color: #a00;
+  font-size: 40px;
+  font-weight: bold;
+  color: #AAA;
 }
 
 .title a:hover {
-  color: #000;
+  color: #DDD;
 }
 
 .header a.extra {
-  color: #aaa;
-  margin-left: 1em;
+  font-size: 20px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  text-transform: uppercase;
+  color: #AAA;
+  margin-left: 1.5em;
 }
 
 .header a.extra:hover {
-  color: #000;
+  color: #DDD;
 }
 
 .meta {
