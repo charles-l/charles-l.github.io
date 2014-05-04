@@ -1,3 +1,11 @@
-name: Chuck's blog
+name: "Chuck's Blog"
+description: "GAMEDEV AND SHTUFF"
+
+author: "Chuck"
+
+url: "http://charles-l.github.io"
+baseurl: ""
+
 markdown: redcarpet
+permalink: :year/:month/:title.html
 pygments: true
