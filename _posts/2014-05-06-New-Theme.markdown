@@ -1,9 +1,0 @@
----
-layout: post
-title:  "Theme Overhaul"
-date:   2014-05-16 20:16:29
-categories: misc
----
-
-#Would ya look at that. There's a new theme!
-So, I decided to finally add a new theme to my blog. I was starting to write one from scratch, but saw a really awesome theme called [Hikari](https://github.com/m3xm/hikari-for-Jekyll).
