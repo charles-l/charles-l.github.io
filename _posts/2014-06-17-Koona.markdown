@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Koona"
+date:   2014-06-17 18:36:28
+categories: ruby
+---
+
+Writing a compiler has been quite the experience. It's turned out to be fairly easy to get a simple compiler up and running, but the task itself is way more complex - yet somehow more elegant - than I expected. The biggest hurdle with [Koona](https://github.com/charles-l/koona) was actually a lack of documentation for the tools I was using.
+
+I originally was going to write the compiler in C while following a tutorial on flex and bison. However, after a few hours of painfully copying the entire project by hand (because I wanted to learn it), LLVM puked. I wasn't going to bother to try and solve it, because I'm really not much of a C programmer. The other option I was considering was ANTLR, but I don't like Java, so I was trying to find an alternative.
+
+I finally settled on Ruby with Rex and Racc (Ruby ports of Lex and Yacc). The projects have been dormant for a few years and aren't compatible with the latest versions of Ruby, but that wasn't an issue. All I had to do was use RVM to select an older version of Ruby, and simply install the gems.
+
+As I said before, the biggest issue was a lack of documentation/examples. I found a few old articles that explained how to use the tools, but couldn't find a full project until I'd dug around a little more. At this point, I already had the lexer and parser working. However, I still was fuzzy on the last building block a compiler needs: the generator. I saw a [video from a Ruby conference](https://www.youtube.com/watch?v=goQZps9vt3o) that explained the entire process, and I finally understood the whole AST/generator thing. I looked around on GitHub and found [a full project](https://github.com/thomaslee/jojo) that used Racc and Rex, which was a good reference for the rest of the code I wrote.
+
+Now I have a simple compiler that compiles my syntax down to C. It supports variable declaration, function declaration, integers, floats and mathematical operators. Even though it's small, it's a good starting point and shouldn't be too hard to extend.
+
+---------
+
+I'm glad I chose to use Ruby, because it made prototyping easy. As my Dad said: "It's better to learn how to write it in a language where your not always tripping over yourself." That's not to say C is a bad language (in fact, I think it's an awesome language and I plan to learn it better), but as a beginner, I will trip over it. It's meant to be used by someone who really knows what's going on. I don't. I tend to flail. Ruby will cushion my flailing, but C will let me smack my head and spill my brains out.
+
+I will port Koona to C++ eventually, but only when I totally understand what's going on. I haven't had a class on compiler design, I haven't read a book on it and I'm making it up as I go along. Ruby will eventually be limiting instead of freeing, but at the moment it's working out pretty well.
+
+Any feedback is appreciated :)
