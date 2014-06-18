@@ -3,7 +3,7 @@ description: "GAMEDEV AND SHTUFF"
 
 author: "Chuck"
 
-url: "http://charles-l.github.io"
+url: ""#"http://charles-l.github.io"
 baseurl: "http://charles-l.github.io"
 
 markdown: redcarpet
