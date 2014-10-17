@@ -14,8 +14,8 @@ html, body { height: 100%; }
 
 body {
   background-color: #424D5C;
-  font: 13.34px Helvetica, Arial, sans-serif;
-  font-size: small;
+  font: 13.34px 'Lato', sans-serif;
+  font-size: medium;
   text-align: center;
   color: #909BAA;
 }
@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1 { font-size: 25pt; margin-bottom: 1em; }
-h2 { font-size: 15pt; }
+h2 { font-size: 18pt; }
 p { margin: 1em 0; }
 
 a         { color: #6884A8; }
@@ -51,6 +51,10 @@ a:visited { color: #6884A8; }
   color: #aaa;
   font-family: Monaco, "Courier New", monospace;
   font-size: 80%;
+}
+
+.posts a {
+  text-decoration: none;
 }
 
 /*****************************************************************************/
@@ -106,6 +110,10 @@ a:visited { color: #6884A8; }
   overflow: hidden;
 }
 
+.footer ul {
+  list-style: none;
+}
+
 .footer .contact {
   float: left;
   margin-right: 3em;
@@ -123,6 +131,17 @@ a:visited { color: #6884A8; }
 
 .footer .rss img {
   border: 0;
+}
+
+.right {
+  float: right !important;
+}
+
+hr {
+  background-color: #848F58;
+  height: 4px;
+  border: none;
+  inset: none;
 }
 
 /*****************************************************************************/
