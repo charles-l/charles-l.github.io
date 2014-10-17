@@ -1,23 +1,39 @@
 ---
 layout: default
-title: Homepage
+title: Charlie the Ninja
 ---
 
 <div id="home">
+  <h1>Projects</h1>
+  <ul id="projects" class="posts">
+  </ul>
+
+  <h1>Blog Posts</h1>
   <ul class="posts">
     {% for post in site.posts %}
-      <li itemscope itemtype="http://schema.org/BlogPosting">
-        <a href="{{ site.baseurl }}{{ post.url }}" itemprop="url">
-          <div class="p-wrap">
-            <time datetime="{{ post.date | date_to_xmlschema }}" class="date"
-                itemprop="datePublished">
-              {{ post.date | date_to_string }}
-            </time>
-            <p itemprop="name headline" class="headline">{{ post.title }}</p>
-            <p class="excerpt">{{post.excerpt | strip_html}}</p>
-          </div>
-        </a>
-      </li>
+      <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
     {% endfor %}
   </ul>
+
+  <script>
+    var url="https://api.github.com/users/charles-l/repos";
+
+    function sortResults(table, prop, asc) {
+      return table.sort(function(a, b) {
+        if (asc) return (a[prop] > b[prop]) ? 1 : ((a[prop] < b[prop]) ? -1 : 0);
+        else return (b[prop] > a[prop]) ? 1 : ((b[prop] < a[prop]) ? -1 : 0);
+      });
+    }
+
+    $.getJSON(url, function(data)
+    {
+      var items = [];
+      data = sortResults(data, 'stargazers_count', false);
+      $.each(data, function(key, val) {
+        if(key >= 5) {return;}
+        items.push("<li><a href='"+val["html_url"]+"'><span>" + val["name"] + "</span></a> &raquo; "+ val["description"] +"</li>");
+      });
+      $("#projects").html(items.join(""));
+    });
+  </script>
 </div>
