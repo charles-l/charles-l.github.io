@@ -181,3 +181,28 @@ hr {
 .post pre.terminal code {
   background-color: #333;
 }
+
+@media only screen and (max-width: 810px)
+{
+  .site {
+    width: 90%;
+  }
+  .title {
+    display: block;
+    margin-bottom: 10px;
+  }
+  .header a.extra {
+    margin-left: 0;
+  }
+  .header {
+    margin-bottom: 50px;
+  }
+  .contact {
+    width: 100%;
+    display: block;
+  }
+  .right {
+    float: none !important;
+  }
+}
+
