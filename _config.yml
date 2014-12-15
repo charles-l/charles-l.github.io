@@ -1,3 +1,5 @@
 name: Charlie the Ninja
 markdown: redcarpet
 highlighter: pygments
+exclude: [node_modules/, Gruntfile.coffee, package.json, post.rb]
+gems: [jekyll_github_sample, jekyll-timeago]

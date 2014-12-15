@@ -1,52 +1,32 @@
+---
+layout: compress
+---
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>{{ page.title }}</title>
-        <meta name="viewport" content="width=device-width">
+        <head>
+                <meta charset="utf-8">
+                <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+                <title>{{ page.title }}</title>
+                <meta name="viewport" content="width=device-width">
 
-        <!-- font -->
-        <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+                <!-- font -->
+                <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
+                <!-- Custom CSS -->
+                <link rel="stylesheet" href="/css/main.css.min">
+        </head>
+        <body>
+                <h1><a href="/" class="title">{{ site.name }}</a></h1>
 
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
+                {{ content }}
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    </head>
-    <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">{{ site.name }}</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          {{ content }}
-
-          <div class="footer">
-            <div class="contact">
-              <p>
+                <hr/>
                 Charles Saternos<br />
                 Software Developer<br />
-                <a href="http://twitter.com/theninjacharlie">@theninjacharlie</a>
-              </p>
-            </div>
-            <div class="contact right">
-              <p>
-              <ul>
+                <ul class="none">
                 {%for m in site.data.socialmedia %}
-                <li><a href="{{ m.u }}">{{ m.s }}</a></li>
+                <li><a href="{{ m.url }}">{{ m.title }}</a></li>
                 {%endfor%}
-              </ul>
-              </p>
-            </div>
-          </div>
-        </div>
-
-    </body>
+                </ul>
+        </body>
 </html>

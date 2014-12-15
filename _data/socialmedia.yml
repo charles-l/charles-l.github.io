@@ -1,10 +1,17 @@
-- s: Github
-  u: "http://github.com/charles-l"
-- s: YouTube Channel
-  u: "http://youtube.com/thespastickangaroo"
-- s: Other YouTube Channel
-  u: "http://youtube.com/officialninjacharlie"
-- s: Itch Games
-  u: "http://ninjacharlie.itch.io/"
-- s: Art
-  u: "http://dropr.com/ninjacharlie"
+- title: github
+  url: "http://github.com/charles-l"
+
+- title: youtube
+  url: "http://youtube.com/thespastickangaroo"
+
+- title: itch
+  url: "http://ninjacharlie.itch.io/"
+
+- title: dropr
+  url: "http://dropr.com/ninjacharlie"
+
+- title: twitter
+  url: "http://twitter.com/theninjacharlie"
+
+- title: linkedin
+  url: "https://www.linkedin.com/profile/view?id=376379091"

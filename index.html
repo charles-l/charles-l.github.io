@@ -1,100 +1,18 @@
-<!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Charlie the Ninja</title>
-        <meta name="viewport" content="width=device-width">
+---
+layout: default
+title: Charlie the Ninja
+---
 
-        <!-- font -->
-        <link href='http://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+<h1>Projects</h1>
+<ul class="none">
+        {% for proj in site.data.projects %}
+        <li><span>{{ proj.name }}</span> &raquo; <a href="{{ proj.html_url }}">{{ proj.description }}</a></li>
+        {% endfor %}
+</ul>
 
-        <!-- syntax highlighting CSS -->
-        <link rel="stylesheet" href="/css/syntax.css">
-
-        <!-- Custom CSS -->
-        <link rel="stylesheet" href="/css/main.css">
-
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    </head>
-    <body>
-
-        <div class="site">
-          <div class="header">
-            <h1 class="title"><a href="/">Charlie the Ninja</a></h1>
-            <a class="extra" href="/">home</a>
-          </div>
-
-          <div id="home">
-  <h1>Projects</h1>
-  <ul id="projects" class="posts">
-  </ul>
-
-  <h1>Blog Posts</h1>
-  <ul class="posts">
-
-      <li><span>17 Jun 2014</span> &raquo; <a href="/ruby/2014/06/17/Koona.html">Koona</a></li>
-
-      <li><span>12 Jun 2014</span> &raquo; <a href="/ruby/2014/06/12/TODO-Notifier.html">TODO Notifier</a></li>
-
-      <li><span>04 May 2014</span> &raquo; <a href="/gamedev/2014/05/04/LD29-Post-Mortem.html">Ludum Dare 29 Post Mortem</a></li>
-
-      <li><span>13 Mar 2014</span> &raquo; <a href="/gamedev/2014/03/13/redshift.html">Redshift</a></li>
-
-  </ul>
-
-  <script>
-    var url="https://api.github.com/users/charles-l/repos";
-
-    function sortResults(table, prop, asc) {
-      return table.sort(function(a, b) {
-        if (asc) return (a[prop] > b[prop]) ? 1 : ((a[prop] < b[prop]) ? -1 : 0);
-        else return (b[prop] > a[prop]) ? 1 : ((b[prop] < a[prop]) ? -1 : 0);
-      });
-    }
-
-    $.getJSON(url, function(data)
-    {
-      var items = [];
-      data = sortResults(data, 'stargazers_count', false);
-      $.each(data, function(key, val) {
-        if(key >= 5) {return;}
-        items.push("<li><a href='"+val["html_url"]+"'><span>" + val["name"] + "</span></a> &raquo; "+ val["description"] +"</li>");
-      });
-      $("#projects").html(items.join(""));
-    });
-  </script>
-</div>
-
-
-          <div class="footer">
-            <div class="contact">
-              <p>
-                Charles Saternos<br />
-                Software Developer<br />
-                <a href="http://twitter.com/theninjacharlie">@theninjacharlie</a>
-              </p>
-            </div>
-            <div class="contact right">
-              <p>
-              <ul>
-
-                <li><a href="http://github.com/charles-l">Github</a></li>
-
-                <li><a href="http://youtube.com/thespastickangaroo">YouTube Channel</a></li>
-
-                <li><a href="http://youtube.com/officialninjacharlie">Other YouTube Channel</a></li>
-
-                <li><a href="http://ninjacharlie.itch.io/">Itch Games</a></li>
-
-                <li><a href="http://dropr.com/ninjacharlie">Art</a></li>
-
-              </ul>
-              </p>
-            </div>
-          </div>
-        </div>
-
-    </body>
-</html>
+<h1>Blog Posts</h1>
+<ul class="none">
+        {% for post in site.posts %}
+        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        {% endfor %}
+</ul>
