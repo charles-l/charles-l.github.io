@@ -6,7 +6,7 @@ title: Charlie the Ninja
 <h1>Projects</h1>
 <ul class="none">
         {% for proj in site.data.projects %}
-        <li><span>{{ proj.name }}</span> &raquo; <a href="{{ proj.html_url }}">{{ proj.description }}</a></li>
+        {% if proj.description %} <li><span>{{ proj.name }}</span> &raquo; <a href="{{ proj.html_url }}">{{ proj.description }}</a></li> {% endif %}
         {% endfor %}
 </ul>
 
