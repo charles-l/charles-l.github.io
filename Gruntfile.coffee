@@ -7,7 +7,7 @@ gruntFunction = (grunt) ->
                                 files:
                                         "_src_css/main.css": "_less/*"
                 cssmin:
-                        "css/main.css.min": "_src_css/*.css"
+                        "css/main.min.css": "_src_css/*.css"
                 jekyll:
                         options:
                                 src: './'
