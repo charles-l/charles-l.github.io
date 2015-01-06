@@ -76,10 +76,10 @@
   has_downloads: true
   has_wiki: true
   has_pages: false
-  forks_count: 1
+  forks_count: 2
   mirror_url: 
   open_issues_count: 0
-  forks: 1
+  forks: 2
   open_issues: 0
   watchers: 9
   default_branch: master
@@ -160,6 +160,90 @@
   has_downloads: true
   has_wiki: true
   has_pages: true
+  forks_count: 0
+  mirror_url: 
+  open_issues_count: 0
+  forks: 0
+  open_issues: 0
+  watchers: 2
+  default_branch: master
+- id: 23747841
+  name: lua_tutorial
+  full_name: charles-l/lua_tutorial
+  owner:
+    login: charles-l
+    id: 1291012
+    avatar_url: https://avatars.githubusercontent.com/u/1291012?v=3
+    gravatar_id: ''
+    url: https://api.github.com/users/charles-l
+    html_url: https://github.com/charles-l
+    followers_url: https://api.github.com/users/charles-l/followers
+    following_url: https://api.github.com/users/charles-l/following{/other_user}
+    gists_url: https://api.github.com/users/charles-l/gists{/gist_id}
+    starred_url: https://api.github.com/users/charles-l/starred{/owner}{/repo}
+    subscriptions_url: https://api.github.com/users/charles-l/subscriptions
+    organizations_url: https://api.github.com/users/charles-l/orgs
+    repos_url: https://api.github.com/users/charles-l/repos
+    events_url: https://api.github.com/users/charles-l/events{/privacy}
+    received_events_url: https://api.github.com/users/charles-l/received_events
+    type: User
+    site_admin: false
+  private: false
+  html_url: https://github.com/charles-l/lua_tutorial
+  description: Code for my Lua tutorial series on YouTube
+  fork: false
+  url: https://api.github.com/repos/charles-l/lua_tutorial
+  forks_url: https://api.github.com/repos/charles-l/lua_tutorial/forks
+  keys_url: https://api.github.com/repos/charles-l/lua_tutorial/keys{/key_id}
+  collaborators_url: https://api.github.com/repos/charles-l/lua_tutorial/collaborators{/collaborator}
+  teams_url: https://api.github.com/repos/charles-l/lua_tutorial/teams
+  hooks_url: https://api.github.com/repos/charles-l/lua_tutorial/hooks
+  issue_events_url: https://api.github.com/repos/charles-l/lua_tutorial/issues/events{/number}
+  events_url: https://api.github.com/repos/charles-l/lua_tutorial/events
+  assignees_url: https://api.github.com/repos/charles-l/lua_tutorial/assignees{/user}
+  branches_url: https://api.github.com/repos/charles-l/lua_tutorial/branches{/branch}
+  tags_url: https://api.github.com/repos/charles-l/lua_tutorial/tags
+  blobs_url: https://api.github.com/repos/charles-l/lua_tutorial/git/blobs{/sha}
+  git_tags_url: https://api.github.com/repos/charles-l/lua_tutorial/git/tags{/sha}
+  git_refs_url: https://api.github.com/repos/charles-l/lua_tutorial/git/refs{/sha}
+  trees_url: https://api.github.com/repos/charles-l/lua_tutorial/git/trees{/sha}
+  statuses_url: https://api.github.com/repos/charles-l/lua_tutorial/statuses/{sha}
+  languages_url: https://api.github.com/repos/charles-l/lua_tutorial/languages
+  stargazers_url: https://api.github.com/repos/charles-l/lua_tutorial/stargazers
+  contributors_url: https://api.github.com/repos/charles-l/lua_tutorial/contributors
+  subscribers_url: https://api.github.com/repos/charles-l/lua_tutorial/subscribers
+  subscription_url: https://api.github.com/repos/charles-l/lua_tutorial/subscription
+  commits_url: https://api.github.com/repos/charles-l/lua_tutorial/commits{/sha}
+  git_commits_url: https://api.github.com/repos/charles-l/lua_tutorial/git/commits{/sha}
+  comments_url: https://api.github.com/repos/charles-l/lua_tutorial/comments{/number}
+  issue_comment_url: https://api.github.com/repos/charles-l/lua_tutorial/issues/comments/{number}
+  contents_url: https://api.github.com/repos/charles-l/lua_tutorial/contents/{+path}
+  compare_url: https://api.github.com/repos/charles-l/lua_tutorial/compare/{base}...{head}
+  merges_url: https://api.github.com/repos/charles-l/lua_tutorial/merges
+  archive_url: https://api.github.com/repos/charles-l/lua_tutorial/{archive_format}{/ref}
+  downloads_url: https://api.github.com/repos/charles-l/lua_tutorial/downloads
+  issues_url: https://api.github.com/repos/charles-l/lua_tutorial/issues{/number}
+  pulls_url: https://api.github.com/repos/charles-l/lua_tutorial/pulls{/number}
+  milestones_url: https://api.github.com/repos/charles-l/lua_tutorial/milestones{/number}
+  notifications_url: https://api.github.com/repos/charles-l/lua_tutorial/notifications{?since,all,participating}
+  labels_url: https://api.github.com/repos/charles-l/lua_tutorial/labels{/name}
+  releases_url: https://api.github.com/repos/charles-l/lua_tutorial/releases{/id}
+  created_at: '2014-09-06T23:15:59Z'
+  updated_at: '2014-12-29T20:25:24Z'
+  pushed_at: '2014-12-28T13:48:21Z'
+  git_url: git://github.com/charles-l/lua_tutorial.git
+  ssh_url: git@github.com:charles-l/lua_tutorial.git
+  clone_url: https://github.com/charles-l/lua_tutorial.git
+  svn_url: https://github.com/charles-l/lua_tutorial
+  homepage: ''
+  size: 152
+  stargazers_count: 2
+  watchers_count: 2
+  language: Lua
+  has_issues: true
+  has_downloads: true
+  has_wiki: true
+  has_pages: false
   forks_count: 0
   mirror_url: 
   open_issues_count: 0
@@ -335,9 +419,9 @@
   open_issues: 0
   watchers: 1
   default_branch: master
-- id: 22318541
-  name: lua_browser
-  full_name: charles-l/lua_browser
+- id: 21581247
+  name: zeroclickinfo-goodies
+  full_name: charles-l/zeroclickinfo-goodies
   owner:
     login: charles-l
     id: 1291012
@@ -357,144 +441,60 @@
     type: User
     site_admin: false
   private: false
-  html_url: https://github.com/charles-l/lua_browser
-  description: 
-  fork: false
-  url: https://api.github.com/repos/charles-l/lua_browser
-  forks_url: https://api.github.com/repos/charles-l/lua_browser/forks
-  keys_url: https://api.github.com/repos/charles-l/lua_browser/keys{/key_id}
-  collaborators_url: https://api.github.com/repos/charles-l/lua_browser/collaborators{/collaborator}
-  teams_url: https://api.github.com/repos/charles-l/lua_browser/teams
-  hooks_url: https://api.github.com/repos/charles-l/lua_browser/hooks
-  issue_events_url: https://api.github.com/repos/charles-l/lua_browser/issues/events{/number}
-  events_url: https://api.github.com/repos/charles-l/lua_browser/events
-  assignees_url: https://api.github.com/repos/charles-l/lua_browser/assignees{/user}
-  branches_url: https://api.github.com/repos/charles-l/lua_browser/branches{/branch}
-  tags_url: https://api.github.com/repos/charles-l/lua_browser/tags
-  blobs_url: https://api.github.com/repos/charles-l/lua_browser/git/blobs{/sha}
-  git_tags_url: https://api.github.com/repos/charles-l/lua_browser/git/tags{/sha}
-  git_refs_url: https://api.github.com/repos/charles-l/lua_browser/git/refs{/sha}
-  trees_url: https://api.github.com/repos/charles-l/lua_browser/git/trees{/sha}
-  statuses_url: https://api.github.com/repos/charles-l/lua_browser/statuses/{sha}
-  languages_url: https://api.github.com/repos/charles-l/lua_browser/languages
-  stargazers_url: https://api.github.com/repos/charles-l/lua_browser/stargazers
-  contributors_url: https://api.github.com/repos/charles-l/lua_browser/contributors
-  subscribers_url: https://api.github.com/repos/charles-l/lua_browser/subscribers
-  subscription_url: https://api.github.com/repos/charles-l/lua_browser/subscription
-  commits_url: https://api.github.com/repos/charles-l/lua_browser/commits{/sha}
-  git_commits_url: https://api.github.com/repos/charles-l/lua_browser/git/commits{/sha}
-  comments_url: https://api.github.com/repos/charles-l/lua_browser/comments{/number}
-  issue_comment_url: https://api.github.com/repos/charles-l/lua_browser/issues/comments/{number}
-  contents_url: https://api.github.com/repos/charles-l/lua_browser/contents/{+path}
-  compare_url: https://api.github.com/repos/charles-l/lua_browser/compare/{base}...{head}
-  merges_url: https://api.github.com/repos/charles-l/lua_browser/merges
-  archive_url: https://api.github.com/repos/charles-l/lua_browser/{archive_format}{/ref}
-  downloads_url: https://api.github.com/repos/charles-l/lua_browser/downloads
-  issues_url: https://api.github.com/repos/charles-l/lua_browser/issues{/number}
-  pulls_url: https://api.github.com/repos/charles-l/lua_browser/pulls{/number}
-  milestones_url: https://api.github.com/repos/charles-l/lua_browser/milestones{/number}
-  notifications_url: https://api.github.com/repos/charles-l/lua_browser/notifications{?since,all,participating}
-  labels_url: https://api.github.com/repos/charles-l/lua_browser/labels{/name}
-  releases_url: https://api.github.com/repos/charles-l/lua_browser/releases{/id}
-  created_at: '2014-07-27T18:34:19Z'
-  updated_at: '2014-07-27T18:34:27Z'
-  pushed_at: '2014-07-27T18:41:19Z'
-  git_url: git://github.com/charles-l/lua_browser.git
-  ssh_url: git@github.com:charles-l/lua_browser.git
-  clone_url: https://github.com/charles-l/lua_browser.git
-  svn_url: https://github.com/charles-l/lua_browser
-  homepage: 
-  size: 128
-  stargazers_count: 0
-  watchers_count: 0
-  language: Lua
-  has_issues: true
-  has_downloads: true
-  has_wiki: true
-  has_pages: false
-  forks_count: 0
-  mirror_url: 
-  open_issues_count: 0
-  forks: 0
-  open_issues: 0
-  watchers: 0
-  default_branch: master
-- id: 27147388
-  name: rss
-  full_name: charles-l/rss
-  owner:
-    login: charles-l
-    id: 1291012
-    avatar_url: https://avatars.githubusercontent.com/u/1291012?v=3
-    gravatar_id: ''
-    url: https://api.github.com/users/charles-l
-    html_url: https://github.com/charles-l
-    followers_url: https://api.github.com/users/charles-l/followers
-    following_url: https://api.github.com/users/charles-l/following{/other_user}
-    gists_url: https://api.github.com/users/charles-l/gists{/gist_id}
-    starred_url: https://api.github.com/users/charles-l/starred{/owner}{/repo}
-    subscriptions_url: https://api.github.com/users/charles-l/subscriptions
-    organizations_url: https://api.github.com/users/charles-l/orgs
-    repos_url: https://api.github.com/users/charles-l/repos
-    events_url: https://api.github.com/users/charles-l/events{/privacy}
-    received_events_url: https://api.github.com/users/charles-l/received_events
-    type: User
-    site_admin: false
-  private: false
-  html_url: https://github.com/charles-l/rss
-  description: Minimal rss reader
-  fork: false
-  url: https://api.github.com/repos/charles-l/rss
-  forks_url: https://api.github.com/repos/charles-l/rss/forks
-  keys_url: https://api.github.com/repos/charles-l/rss/keys{/key_id}
-  collaborators_url: https://api.github.com/repos/charles-l/rss/collaborators{/collaborator}
-  teams_url: https://api.github.com/repos/charles-l/rss/teams
-  hooks_url: https://api.github.com/repos/charles-l/rss/hooks
-  issue_events_url: https://api.github.com/repos/charles-l/rss/issues/events{/number}
-  events_url: https://api.github.com/repos/charles-l/rss/events
-  assignees_url: https://api.github.com/repos/charles-l/rss/assignees{/user}
-  branches_url: https://api.github.com/repos/charles-l/rss/branches{/branch}
-  tags_url: https://api.github.com/repos/charles-l/rss/tags
-  blobs_url: https://api.github.com/repos/charles-l/rss/git/blobs{/sha}
-  git_tags_url: https://api.github.com/repos/charles-l/rss/git/tags{/sha}
-  git_refs_url: https://api.github.com/repos/charles-l/rss/git/refs{/sha}
-  trees_url: https://api.github.com/repos/charles-l/rss/git/trees{/sha}
-  statuses_url: https://api.github.com/repos/charles-l/rss/statuses/{sha}
-  languages_url: https://api.github.com/repos/charles-l/rss/languages
-  stargazers_url: https://api.github.com/repos/charles-l/rss/stargazers
-  contributors_url: https://api.github.com/repos/charles-l/rss/contributors
-  subscribers_url: https://api.github.com/repos/charles-l/rss/subscribers
-  subscription_url: https://api.github.com/repos/charles-l/rss/subscription
-  commits_url: https://api.github.com/repos/charles-l/rss/commits{/sha}
-  git_commits_url: https://api.github.com/repos/charles-l/rss/git/commits{/sha}
-  comments_url: https://api.github.com/repos/charles-l/rss/comments{/number}
-  issue_comment_url: https://api.github.com/repos/charles-l/rss/issues/comments/{number}
-  contents_url: https://api.github.com/repos/charles-l/rss/contents/{+path}
-  compare_url: https://api.github.com/repos/charles-l/rss/compare/{base}...{head}
-  merges_url: https://api.github.com/repos/charles-l/rss/merges
-  archive_url: https://api.github.com/repos/charles-l/rss/{archive_format}{/ref}
-  downloads_url: https://api.github.com/repos/charles-l/rss/downloads
-  issues_url: https://api.github.com/repos/charles-l/rss/issues{/number}
-  pulls_url: https://api.github.com/repos/charles-l/rss/pulls{/number}
-  milestones_url: https://api.github.com/repos/charles-l/rss/milestones{/number}
-  notifications_url: https://api.github.com/repos/charles-l/rss/notifications{?since,all,participating}
-  labels_url: https://api.github.com/repos/charles-l/rss/labels{/name}
-  releases_url: https://api.github.com/repos/charles-l/rss/releases{/id}
-  created_at: '2014-11-25T21:43:46Z'
-  updated_at: '2014-12-04T19:15:04Z'
-  pushed_at: '2014-12-04T19:15:03Z'
-  git_url: git://github.com/charles-l/rss.git
-  ssh_url: git@github.com:charles-l/rss.git
-  clone_url: https://github.com/charles-l/rss.git
-  svn_url: https://github.com/charles-l/rss
-  homepage: 
-  size: 164
+  html_url: https://github.com/charles-l/zeroclickinfo-goodies
+  description: DuckDuckGo instant answer plugins based on Perl functions
+  fork: true
+  url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies
+  forks_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/forks
+  keys_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/keys{/key_id}
+  collaborators_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/collaborators{/collaborator}
+  teams_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/teams
+  hooks_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/hooks
+  issue_events_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/issues/events{/number}
+  events_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/events
+  assignees_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/assignees{/user}
+  branches_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/branches{/branch}
+  tags_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/tags
+  blobs_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/git/blobs{/sha}
+  git_tags_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/git/tags{/sha}
+  git_refs_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/git/refs{/sha}
+  trees_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/git/trees{/sha}
+  statuses_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/statuses/{sha}
+  languages_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/languages
+  stargazers_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/stargazers
+  contributors_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/contributors
+  subscribers_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/subscribers
+  subscription_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/subscription
+  commits_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/commits{/sha}
+  git_commits_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/git/commits{/sha}
+  comments_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/comments{/number}
+  issue_comment_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/issues/comments/{number}
+  contents_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/contents/{+path}
+  compare_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/compare/{base}...{head}
+  merges_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/merges
+  archive_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/{archive_format}{/ref}
+  downloads_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/downloads
+  issues_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/issues{/number}
+  pulls_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/pulls{/number}
+  milestones_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/milestones{/number}
+  notifications_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/notifications{?since,all,participating}
+  labels_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/labels{/name}
+  releases_url: https://api.github.com/repos/charles-l/zeroclickinfo-goodies/releases{/id}
+  created_at: '2014-07-07T18:09:32Z'
+  updated_at: '2014-12-31T19:29:42Z'
+  pushed_at: '2014-12-31T19:29:42Z'
+  git_url: git://github.com/charles-l/zeroclickinfo-goodies.git
+  ssh_url: git@github.com:charles-l/zeroclickinfo-goodies.git
+  clone_url: https://github.com/charles-l/zeroclickinfo-goodies.git
+  svn_url: https://github.com/charles-l/zeroclickinfo-goodies
+  homepage: http://duckduckhack.com/
+  size: 6295
   stargazers_count: 0
   watchers_count: 0
   language: Perl
-  has_issues: true
+  has_issues: false
   has_downloads: true
-  has_wiki: true
+  has_wiki: false
   has_pages: false
   forks_count: 0
   mirror_url: 

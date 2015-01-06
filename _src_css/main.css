@@ -34,6 +34,7 @@ h4,
 h5 {
   font-family: 'silkscreennormal';
   margin-bottom: 0px;
+  line-height: 1.4;
   font-smooth: never;
   -webkit-font-smoothing: none;
 }
@@ -44,9 +45,18 @@ a.title {
   text-decoration: none;
   color: #ff530d;
 }
+ul {
+  padding-left: 20px !important;
+}
 ul.none {
   list-style-type: none;
   padding: 0;
+}
+code {
+  background-color: #1d272c;
+  color: #bdd4de;
+  padding: 4px;
+  margin: 4px;
 }
 hr {
   border: none;
@@ -78,4 +88,13 @@ pre {
   font-size: 15px;
   border-bottom: 3px #3f5765 solid;
   margin-bottom: 20px;
+}
+.meta {
+  font-size: 10pt;
+  color: #3f5765;
+  text-transform: uppercase;
+  margin-top: -4px;
+}
+.footer {
+  margin-top: 40px;
 }

@@ -48,6 +48,7 @@ body {
 h1, h2, h3, h4, h5 {
         font-family: 'silkscreennormal';
         margin-bottom: 0px;
+        line-height: 1.4;
         font-smooth: never;
         -webkit-font-smoothing : none;
 }
@@ -61,9 +62,20 @@ a.title {
         color: @orange;
 }
 
+ul {
+    padding-left: 20px !important;
+}
+
 ul.none {
         list-style-type: none;
         padding: 0;
+}
+
+code {
+        background-color: darken(@dark_blue, 7%);
+        color: @white_blue;
+        padding: 4px;
+        margin: 4px;
 }
 
 hr {
@@ -100,4 +112,15 @@ pre {
         font-size: 15px;
         border-bottom: 3px @blue solid;
         margin-bottom: 20px;
+}
+
+.meta {
+    font-size: 10pt;
+    color: @blue;
+    text-transform: uppercase;
+    margin-top: -4px;
+}
+
+.footer {
+    margin-top: 40px;
 }

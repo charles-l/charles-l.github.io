@@ -11,6 +11,7 @@ layout: compress
 
                 <!-- font -->
                 <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+                <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
                 <!-- Custom CSS -->
                 <link rel="stylesheet" href="/css/main.min.css">
@@ -20,13 +21,13 @@ layout: compress
 
                 {{ content }}
 
-                <hr/>
-                Charles Saternos<br />
-                Software Developer<br />
-                <ul class="none">
-                {%for m in site.data.socialmedia %}
-                <li><a href="{{ m.url }}">{{ m.title }}</a></li>
-                {%endfor%}
-                </ul>
+                <div class="footer">
+                    <hr/>
+                    Charles Saternos<br />
+                    Software Developer<br />
+                    {%for m in site.data.socialmedia %}
+                    <a href="{{ m.url }}" title="{{m.url}}">{{ m.title }}</a> &nbsp;
+                    {%endfor%}
+                </div>
         </body>
 </html>
