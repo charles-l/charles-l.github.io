@@ -15,7 +15,9 @@ The build quality for the keyboard, on the other hand, is much better. The keys 
 
 I'm no fan of Windows, but as long as I avoid software development, it's not terrible to use. However, I do plan on installing Linux soon. I just have to figure out how to get past the crazy UEFI secure boot crap. I have had some trouble with booting off a Linux USB, but when I figure it out, I'll put up a post on how to do it.
 
-When I woke up this morning and got ready for the day's classes, I noticed that the battery power was low, despite being plugged in all night. I have yet to verify, but I believe the power adapter has burned out after only a week of use (I really hope the battery is not dead). If it's just the adapter, that's annoying and disappointing, but not a show stopper. I have loads of USB to wall socket adapters sitting at home, and will happily use one in it's place.
+<strike>When I woke up this morning and got ready for the day's classes, I noticed that the battery power was low, despite being plugged in all night. I have yet to verify, but I believe the power adapter has burned out after only a week of use (I really hope the battery is not dead). If it's just the adapter, that's annoying and disappointing, but not a show stopper. I have loads of USB to wall socket adapters sitting at home, and will happily use one in it's place.</strike>
+
+**Update**: It turns out the wall socket I plugged into is broken and won't supply power unless the plug is held at the correct angle. The battery is fine.
 
 The other big problem is the sensor that detects when the laptop is closed. I would expect the computer to go into sleep mode when I lower the lid, and it does in many cases. However, it commonly refuses to sleep and simply leaves the screen on which drains the battery quickly. I don't know if it's a hardware or software issue, but I currently suspect the hardware is simply not sensitive enough. If you prefer to work with it as a tablet most of the time, this is no problem, but if you use it as a laptop, bear this problem in mind.
 
