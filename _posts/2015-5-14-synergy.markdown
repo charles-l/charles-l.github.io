@@ -15,10 +15,12 @@ Building it on OS X 10.10 is a little bit of a pain (you'll have to hack around 
 
 On Arch, I've [riced](http://www.reddit.com/r/unixporn) my setup pretty hard. I use [lemonbar](https://github.com/LemonBoy/bar), which isn't technically a system tray (you simply pipe content to it when you start X). Synergy will fail to start unless you have a tray, so I just wrote a tiny shell script wrapper to start [trayer](https://www.archlinux.org/packages/extra/i686/trayer/) and synergy:
 
-  killall synergy # in case I already have an instance running
-  trayer &
-  synergy &
-  sleep 1
-  killall trayer
+```bash
+killall synergy # in case I already have an instance running
+trayer &
+synergy &
+sleep 1
+killall trayer
+```
 
 Then move synergy to another desktop or [group](http://blog.z3bra.org/2014/11/avoid-workspaces.html), and proceed upon your merry way.
