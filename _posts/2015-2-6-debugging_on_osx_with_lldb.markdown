@@ -58,6 +58,9 @@ There are, however some cases where you don't know where the issue is on a large
 
 After loading your program and typing `run` (no need to set a breakpoint), the program will crash. Type `bt` to see the stack frames and the lines of code they were executing before the crash (stack frames are the way scope is controlled, so each stack frame is just a scope of your program). When you see a questionable frame (probably one that contains your code), type `fr s <framenumber>` to select the frame (by whatever number the frame is). `lldb` will print the line of code that frame was on when it crashed.
 
+## Miscellaneous commands
+- `m r 0x000001 -f i` or `memory read 0x000001 --format i` - read the code at memory location `0x000001`
+
 ----------
 
 Debugging C code in a console may seem daunting at first, but if you know a few commands, you can get by pretty well. Let me know if you have any questions on Twitter @theninjacharlie
