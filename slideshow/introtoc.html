@@ -58,7 +58,7 @@ C isn't a language you'll quickly learn. You'll write programs that don't work r
 ---
 # Why you should learn C
 <small>You only need C for projects that require low-level hardware access or blazing-fast speeds.</small>
-### 1. Advanced Game Development
+### 1. Advanced Game Development (coupled with a good game development framework)
 For *advanced* high-performance 3D graphics intensive applications. *<small>You'd better have some math knowledge (linear algebra, calculus and college physics) for that, too.</small>*
 
 ### 2. Compilers
@@ -79,15 +79,6 @@ YAH! LINUX!!! Kernel hackering, command line utility development, writing a repl
 <br/>
 
 If you're looking to write a script that counts the number of occurrences of 'foo' in a text file, you're in the wrong place.
----
-
-# No C++
-### Why?
-- *C++ doesn't encourage simple coding practices*
-- C++ has mostly been superseded by Java
-- C++ isn't as consistent as C, so it's harder to learn.
-
-.bump[![](./cplusplus.jpg)]
 ---
 class: center, middle, dark
 # If you're still sure you want to learn C, take a quick look at a guide to syntax so you have an idea of what's going on.
@@ -136,7 +127,7 @@ cc -o test test.c
 
 ---
 class: center, middle, dark
-### Duck typing/Weak typing
+### Dynamic typing
 vs
 ### Static typing
 ---
@@ -153,7 +144,7 @@ my_var = 'a string of stuff' # WORDS! (a.k.a. string)
 Once you've set the type for your variable, it must stay that way forever.
 ```c
 int my_var = 3; // It's an int!
-my_var = 2.0; // COMPILER ERROR! You clearly stated that it was an int!
+my_var = "abc"; // COMPILER ERROR! You clearly stated that it was an int!
 
 /* insert explosion here */
 ```
@@ -203,7 +194,7 @@ end # DELETE THE KITTIES
 void my_memory_function() {
     // allocate the memory for a bunch of cat images
     images *cats = malloc(sizeof(cat_image) * NUMBER_OF_CATS_ON_IMGUR);
-    cats = get_all_teh_images_on_imgur(); // now, we can actually get the images
+    get_all_teh_images_on_imgur(cats); // now, we can actually get the images
     process_images(cats);
 }
 // Kitties still live in memory!
@@ -247,7 +238,7 @@ class: center, middle, dark, thehorror
 # Pointers
 ... are foundational to C. They give you great power (so please be careful).
 
-*A pointer is a value that points to a memory address.*
+*A pointer is a variable that contains a memory address (probably of another variable).*
 
 In C, a '`*`' denotes a variable as a pointer to whatever data type comes before.
 
@@ -370,20 +361,22 @@ class: center, middle, dark
 
 `malloc` takes one argument: the number of bytes that need to be allocated.
 
-A character (`char`) is one byte, so we just need to pass the number of elements plus 1 extra byte for string's null terminator: '`\0`'.
+`sizeof(int)` returns the number of bytes in an integer, which we multiply by the number of elements in the array.
 ```c
-int num_of_letters = 3;
-char *resize_str = malloc(num_of_letters + 1);
-resize_str = "wow";
+int num_of_elements = 3;
+int *resize_arr = malloc(sizeof(int) * num_of_elements);
+// ... put stuff in it ...
 ```
-The `\0` is automatically by C when assigning with '`"`'
+To make room for a new element:
+```c
+resize_arr = realloc(resize_arr, sizeof(int) * (num_of_elements + 1));
+```
+The first argument is the pointer to reallocate, the second is the new size of the pointer.
 
-To add a letter at the end:
+Don't forget to free it when you're done:
 ```c
-resize_str = realloc(resize_str, num_of_letters + 2);
-resize_str = "woah";
+free(resize_arr);
 ```
-The first argument is the pointer to reallocate, the second is the new size of the pointer (don't forget the extra byte for the null terminator).
 ---
 class: center, middle, dark
 # And finally
