@@ -196,10 +196,10 @@ void my_memory_function() {
     images *cats = malloc(sizeof(cat_image) * NUMBER_OF_CATS_ON_IMGUR);
     get_all_teh_images_on_imgur(cats); // now, we can actually get the images
     process_images(cats);
+    // Kitties still live in memory!
+    free(cats); // don't forget this, or else this memory will stay reserved for cats
+    // oop, now they're gone
 }
-// Kitties still live in memory!
-free(cats); // don't forget this, or else this memory will stay reserved for cats
-// oop, now they're gone
 ```
 ---
 class: center, middle, dark
