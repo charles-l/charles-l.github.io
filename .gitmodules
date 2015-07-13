@@ -1,0 +1,3 @@
+[submodule "slideshow"]
+	path = slideshow
+	url = https://github.com/charles-l/intro_to_c_slideshow
