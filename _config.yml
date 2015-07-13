@@ -3,3 +3,6 @@ url: charliethe.ninja
 author: Charles Saternos
 markdown: redcarpet
 highlighter: pygments
+
+gems:
+  - jekyll-redirect-from
