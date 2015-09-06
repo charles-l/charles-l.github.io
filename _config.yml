@@ -4,5 +4,5 @@ author: Charles Saternos
 markdown: redcarpet
 highlighter: pygments
 
-gems:
-  - jekyll-redirect-from
+#gems:
+#- jekyll-redirect-from

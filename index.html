@@ -55,15 +55,15 @@ title: Charlie the Ninja
        ▀▀▀▐ ▐▐▐▐▀▀▀▀▀▀▀▀▀▀▐▐▐▐▐            ▐▀▐▐▐</pre>
 
 <h1>Projects</h1>
-<ul class="none">
+<table>
         {% for proj in site.data.projects %}
-        {% if proj.description %} <li><span>{{ proj.name }}</span> &raquo; <a href="{{ proj.html_url }}">{{ proj.description }}</a></li> {% endif %}
+        {% if proj.description %} <tr><td style="text-align: right; width: 152px;">{{ proj.name }}</td> <td>&raquo;</td><td><a href="{{ proj.html_url }}">{{ proj.description }}</a></td></tr> {% endif %}
         {% endfor %}
-</ul>
+</table>
 
 <h1>Blog Posts</h1>
-<ul class="none">
+<table class="none">
         {% for post in site.posts %}
-        <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+        <tr><td style="text-align:right; width: 152px;">{{ post.date | date_to_string }}</td> <td>&raquo;</td> <td><a href="{{ post.url }}">{{ post.title }}</a></td></tr>
         {% endfor %}
-</ul>
+</table>
