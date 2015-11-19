@@ -9,8 +9,8 @@ There have been [many](http://www.linusakesson.net/programming/syntaxhighlightin
 
 When it comes down to it, colorschemes are primarily functional in two ways:
 
-      - they allow you to quickly scan and parse the contents of a string
-      - and, (if you write a lot of lisp), are useful in displaying rainbow parentheses.
+- they allow you to quickly scan and parse the contents of a string
+- and, (if you write a lot of lisp), are useful in displaying rainbow parentheses.
 
 I wrote a [tiny Vim colorscheme](https://gist.github.com/charles-l/4a5b9cbd0ef6d61ba59d), that colors strings and comments gray (as well as some UI so it stays out of the way). These tweaks may seem somewhat minor, but there is a noticeable difference between a minimal colorscheme and no colorscheme.
 
@@ -18,6 +18,6 @@ So, has turning off syntax highlighting changed my coding experience and unlocke
 
 The only other advantage to a simpler colorscheme is that I'm not constantly downloading and trying out new ones. Black, white and gray show up perfectly in all terminal configurations, and I have no need for tweaking my terminal's default base16 colors to make Vim look decent.
 
-I haven't yet given up highlighted `ls`. I guess I could change my `ls` alias from `ls --colors=always' to `ls -F`, but I find it mentally easier to glob colors than try to differentiate between filenames/directory names with slashes on them. I also think it's excusable because there's less linguistic meaning behind a list of filenames than a piece of code.
+I haven't yet given up highlighted `ls`. I guess I could change my `ls` alias from `ls --colors=always'` to `ls -F`, but I find it mentally easier to glob colors than try to differentiate between filenames/directory names with slashes on them. I also think it's excusable because there's less linguistic meaning behind a list of filenames than a piece of code.
 
 In the end, I'm going to stick with my simpler colorscheme. If nothing else, it at prevents me from wasting time fiddling with my vimrc, and makes maintenance easier. Less is more!
