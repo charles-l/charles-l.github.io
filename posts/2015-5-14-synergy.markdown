@@ -1,0 +1,27 @@
+---
+layout: post
+title: synergy
+date:   2015-05-14 09:43:29
+---
+
+*AHH! BUZZWORD!*
+
+Don't worry. I'm just talking about a super awesome piece of software. Though, I do normally recoil when I hear that word.
+
+The [synergy](https://github.com/synergy/synergy/) I'm talking about is a cross-platform app that allows you to control multiple computers with just one keyboard and mouse over wifi. It's kind of a KVM for multiple devices (but it shares your clipboard across!)
+
+Building it on OS X 10.10 is a little bit of a pain (you'll have to hack around in the python build script, and the CMake config), but once you do, it's a fire-and-forget type of thing that just works. I've been happily using it with OS X and [Arch Linux](https://wiki.archlinux.org/index.php/Synergy) for a few days now.
+
+----
+
+On Arch, I've [riced](http://www.reddit.com/r/unixporn) my setup pretty hard. I use [lemonbar](https://github.com/LemonBoy/bar), which isn't technically a system tray (you simply pipe content to it when you start X). Synergy will fail to start unless you have a tray, so I just wrote a tiny shell script wrapper to start [trayer](https://www.archlinux.org/packages/extra/i686/trayer/) and synergy:
+
+```bash
+killall synergy # in case I already have an instance running
+trayer &
+synergy &
+sleep 1
+killall trayer
+```
+
+Then move synergy to another desktop or [group](http://blog.z3bra.org/2014/11/avoid-workspaces.html), and proceed upon your merry way.

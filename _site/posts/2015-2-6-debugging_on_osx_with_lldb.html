@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Charlie The Ninja - Debugging on OSX with LLDB</title>
+        <link rel="stylesheet" type="text/css" href="../css/default.css" />
+    </head>
+    <body>
+        <div id="header">
+            <div id="navigation">
+                <a id="logo" href="../">Charlie the Ninja</a>
+                <a href="../">Home</a>
+                <a href="../about.html">About</a>
+                <a href="../archive.html">Archive</a>
+            </div>
+        </div>
+
+        <div id="content">
+            <h1>Debugging on OSX with LLDB</h1>
+
+            <div class="info">
+    Posted on February  6, 2015
+    
+</div>
+
+<p>As a beginner C programmer, I’ve just recently started building projects that require real debugging that’s more complex than a simple <code>printf</code> call. The result is that I have to actually learn how to properly use a debugger.</p>
+<p>I work from the command line on OS X and don’t want to bother opening a GUI and breaking my workflow, so the only real option I have is <code>lldb</code>, which is Apple’s custom version of <code>gdb</code> (which means it has have it’s own weird set of quarks, like all Apple products). If you’re used to using <code>gdb</code> there’s a <a href="http://lldb.llvm.org/lldb-gdb.html">page on the LLVM site</a> that shows what commands in <code>gdb</code> are in <code>lldb</code>.</p>
+<p>Let’s look at some code we’re going to debug:</p>
+<div class="sourceCode"><pre class="sourceCode c"><code class="sourceCode c"><span class="ot">#include &lt;stdio.h&gt;</span>
+<span class="ot">#include &lt;string.h&gt;</span>
+
+<span class="dt">int</span> main(<span class="dt">int</span> argc, <span class="dt">char</span> **argv) {
+        printf(<span class="st">&quot;The second arg is %s&quot;</span>, strcat(argv[<span class="dv">1</span>], <span class="st">&quot;!&quot;</span>));
+        <span class="kw">return</span> <span class="dv">0</span>;
+}</code></pre></div>
+<p>The obvious issue with this code is in the <code>printf</code> statement that will attempt to concatinate the second argument with a ‘!’, even if it doesn’t exist. This will result in a segfault, that we will track down using <code>lldb</code>.</p>
+<p>To begin, make sure you’re building your program with debug symbols, otherwise we won’t be able to set breakpoints or view what line is currently executing. Adding the <code>-g</code> flag to your compile command will build the program with debug info.</p>
+<pre><code>clang -g -o mytest test.c</code></pre>
+<p>Now fire up <code>lldb</code>, passing the name of your executable as the second argument:</p>
+<pre><code>lldb mytest</code></pre>
+<p>Type <code>l</code> into the prompt. This is an alias for the <code>source list</code> command, which allows you to see the top few lines of code in your <code>test.c</code> file.</p>
+<p>Now set a breakpoint at line 5 by typing <code>b 5</code>. The breakpoint will stop execution in <code>lldb</code> when it reaches that line. This allows us to go step by step over each line of code, while analyzing the state of the program.</p>
+<p>To begin the execution of your program, type <code>run</code>. Your program will run until it hits the line that we marked with a breakpoint.</p>
+<p>At this point, we have the ability to see all kinds of information about the program with the help of a few commands. The first thing we want to know is value of local variables. Typing <code>fr v</code> (alias for frame variables), will show us all of the current local variables. In this case, it’s just <code>argv</code>. To drill down further, type <code>p argv</code>, to see what the array contains. Since we didn’t pass any arguments to <code>mytest</code> when we started <code>lldb</code>, it currently contains nothing but the name of executable.</p>
+<p>We can now step line by line over the code and break at each point. To step, type either <code>si</code> (step into function) or <code>n</code> (step over function, or next line of execution).</p>
+<p>Type <code>n</code> and to continue execution. You should get something like this:</p>
+<pre><code>Process 29707 stopped
+* thread #1: tid = 0x3bcaf0, 0x00007fff86063172 libsystem_c.dylib`strlen + 18, queue = 'com.apple.main-thread', stop reason = EXC_BAD_ACCESS (code=1, address=0x0)
+    frame #0: 0x00007fff86063172 libsystem_c.dylib`strlen + 18
+libsystem_c.dylib`strlen + 18:
+-&gt; 0x7fff86063172:  pcmpeqb (%rdi), %xmm0
+   0x7fff86063176:  pmovmskb %xmm0, %esi
+   0x7fff8606317a:  andq   $0xf, %rcx
+   0x7fff8606317e:  orq    $-0x1, %rax</code></pre>
+<p>That <code>EXC_BAD_ACCESS</code> is clang blocking us from accessing memory that wasn’t allocated by us. In this case, we are trying to access the second element of the <code>argv</code> array which was never initialized.</p>
+<p>So know you know the basics of debugging with breakpoints, which is extremely useful when you have some idea where the issue is, but don’t know the exact line.</p>
+<p>There are, however some cases where you don’t know where the issue is on a large scale project. If you set a breakpoint, you’ll be stepping over lines of code for thousands of steps, which doesn’t aid you in tracking down the issue. In situations like this, you can use <code>lldb</code>’s backtrace to get information about the state of the program the moment before the crash.</p>
+<p>After loading your program and typing <code>run</code> (no need to set a breakpoint), the program will crash. Type <code>bt</code> to see the stack frames and the lines of code they were executing before the crash (stack frames are the way scope is controlled, so each stack frame is just a scope of your program). When you see a questionable frame (probably one that contains your code), type <code>fr s &lt;framenumber&gt;</code> to select the frame (by whatever number the frame is). <code>lldb</code> will print the line of code that frame was on when it crashed.</p>
+<h2 id="miscellaneous-commands">Miscellaneous commands</h2>
+<ul>
+<li><code>m r 0x000001 -f i</code> or <code>memory read 0x000001 --format i</code> - read the code at memory location <code>0x000001</code></li>
+</ul>
+<hr />
+<p>Debugging C code in a console may seem daunting at first, but if you know a few commands, you can get by pretty well. Let me know if you have any questions on Twitter <span class="citation">@theninjacharlie</span></p>
+
+        </div>
+        <footer>
+            Site proudly generated by
+            <a href="http://jaspervdj.be/hakyll">Hakyll</a>
+        </footer>
+    </body>
+</html>
