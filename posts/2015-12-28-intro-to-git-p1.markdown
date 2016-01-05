@@ -102,7 +102,7 @@ The code is therefore distributed amongst everybody who is working on it. If the
 ### Let's learn some commands!
 
 #### GIT SETUP 101
-```sh
+```bash
 git init # 1.
 git remote add origin https://github.com/username/new_repo # 2.
 ```
@@ -114,7 +114,7 @@ git remote add origin https://github.com/username/new_repo # 2.
 #### COMMIT YO CODE
 This is all you need to do to create a commit containing all changes you've made since the last commit, then push it (you'll be pushing your changes to your new GitHub remote):
 
-```sh
+```bash
 git add --all # (1.)
 git commit -m "a wild commit message appears!" # (2.)
 git push origin master # (3.)
@@ -130,7 +130,7 @@ git push origin master # (3.)
 Run the above commands anytime you want to add a new commit.
 
 #### PULL NEW CODE YO
-```sh
+```bash
 git pull origin master #(1.)
 ```
 

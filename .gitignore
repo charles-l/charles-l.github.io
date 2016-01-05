@@ -2,3 +2,4 @@
 *.o
 site
 _cache
+_site
