@@ -1,11 +1,11 @@
 ---
 layout: post
-title:  "Redshift"
+title:  Redshift
 date:   2014-03-13 09:43:29
 categories: gamedev
 ---
 
-Hi, I'm Chuck. I'm a 14 year old developer, and I just released my first game, [Redshift](http://ninjacharlie.itch.io/redshift). 
+Hi, I'm Charlie. I'm a 14 year old developer, and I just released my first game, [Redshift](http://ninjacharlie.itch.io/redshift).
 Redshift is an arcade-y neon shoot 'em up. In this article I'll be covering the tools I used to create it.
 
 ## Love2D
@@ -15,7 +15,7 @@ of giant tables and lots of `for` loops. I ended up refactoring the code and use
 I still had to use tables to store instances of the classes (simply because of the design of the engine), but I at least had inheritance and mixins, and the resulting code was much cleaner.
 
 ## Vim
-VIM is - in my opinion - the best text editor out there. It's fast, powerful and has a million different plugins.
+Vim is - in my opinion - the best text editor out there. It's fast, powerful and has a million different plugins.
 I've put my [.vimrc file on GitHub](https://github.com/charles-l/dotfiles/blob/master/.vimrc), but I'll give a
 quick rundown of the plugins I use.
 
@@ -66,7 +66,7 @@ If you're an indie, who is trying to release a game, or you're just interested i
 Welp, that's all. I hope this will help a beginner to start out and will warn of some of the big pitfalls I fell in. As it's my first game, I've still got a *lot* to learn, but I'm still really happy I've done it. If you're interested in buying Redshift, you can use the widget below ;)
 
 Thanks for reading,<br/>
-\-Chuck
+\-Charlie
 
 <br/>
 <br/>

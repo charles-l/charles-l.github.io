@@ -51,3 +51,7 @@ The trackpad can move the mouse, but the kernel doesn't detect it as a synaptic 
 As for the sound, backlight, battery and GPIO buttons, I still have to investigate them more thoroughly to see if they aren't supported by extra kernel configuration (I'm just going with Arch's Vanilla Kernel at the moment, which has a surprising amount of kernel support).
 
 Overall, I can use it as a work machine that is nice on the go. In tablet mode, it's becoming more useful (because of the wireless now works)
+
+---
+
+**UPDATE**: I've given up trying to get Linux working. The Broadcom drivers are despicable, and there's no way to make the T100 connect to wifi reliably. I've installed Android-x86 on it, which does make the wireless a lot better. However, it still has lots of issues (screen doesn't fully shut off, hardware acceleration crashes the browser so it's impossible to watch videos and plenty of other issues). I ended up buying a Samsung Chromebook for about the same price, and run Linux on it with Crouton.

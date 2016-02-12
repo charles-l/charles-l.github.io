@@ -1,10 +1,11 @@
 ---
 layout: post
-title:  "Ludum Dare 29 Post Mortem"
+title:  Ludum Dare 29 Post Mortem
 date:   2014-05-04 08:19:29
 categories: gamedev
 ---
-<a href="http://www.ludumdare.com/compo/ludum-dare-29/?action=preview&uid=24096" class="button">Play Ninja vs Worms!</a>
+
+[Play Ninja vs Worms!](http://www.ludumdare.com/compo/ludum-dare-29/?action=preview&uid=24096)
 
 ## What went right
 I managed to get it done! This is my second Ludum Dare submission, and I really cut it close this time, but I managed to release a fairly finished product 30 minutes before the deadline. I had a few issues with my physics library, but I managed to solve most of them before releasing. The only collision issues left were some minor issues with the wall.
@@ -46,7 +47,3 @@ If you want to see a bunch of crappy game jam code, I have [Ninja vs Worms in a 
 Thanks for reading. I learned a lot from this jam and I hope you got something out this article.
 
 Happy game jamming :) <br/>
-- Chuck
-
-<br/>
-<a href="http://www.ludumdare.com/compo/ludum-dare-29/?action=preview&uid=24096" class="button">Play Ninja vs Worms!</a>
