@@ -1,6 +1,9 @@
 ---
 title: About
 ---
+
+![ninja](/images/ninja.jpg)
+
 '((developer) (artist) (linux enthusiast) (student) (ninja)) ; insert witty comment here
 
 '(([GitHub](http://github.com/charles-l))

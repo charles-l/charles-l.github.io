@@ -17,6 +17,7 @@ img.middle {
 
 Well... the man pages are certainly stupid.
 
+<figure>
 ```
 GIT-REBASE(1)
 
@@ -30,7 +31,8 @@ SYNOPSIS
            --root [<branch>]
    git rebase --continue | --skip | --abort | --edit-todo
 ```
-<small><small>Seriously, just look up your questions on stack overflow. You'll get better explanations/examples.</small></small>
+<figcaption>Seriously, just look up your questions on stack overflow. You'll get better explanations/examples.</figcaption>
+</figure>
 
 I mean c'mon. I've haven't been this confused by a manpage since I tried to read `sudoers(5)`.
 
@@ -91,7 +93,7 @@ When you are working with others, you'll often have a central repo called a "rem
 
 <img class="middle" src="/images/push_pull.png"/>
 
-<div class="invert white">
+<div class="invert">
 <b>REMEMBER!</b> No one can see your local commits until you push them to the remote
 </div>
 
