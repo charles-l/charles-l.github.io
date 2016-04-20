@@ -1,716 +1,395 @@
-/*
-github.com style (c) Vasily Polovnyov <vast@whiteants.net>
- */
-
-@charset "UTF-8";
-/*
-Gutenberg: Web Typography Starter Kit
-Website ....... http://matejlatin.github.io/Gutenberg/
-Version ....... 1.1
-Github ........ https://github.com/matejlatin/Gutenberg
-Authors ....... Matej Latin (@matejlatin)
-License ....... Creative Commmons Attribution 3.0
-License URL ... https://raw.githubusercontent.com/matejlatin/Gutenberg/master/license.txt
- */
-/*! Gutenberg reset — adapted from Normalize */
-@import url(https://fonts.googleapis.com/css?family=Merriweather:400,700,400italic);
-@import url(https://fonts.googleapis.com/css?family=Lato:900);
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400italic, 700, 300, 400|Inconsolata);
+@import url(https://fonts.googleapis.com/css?family=Roboto+Condensed);
 html {
     -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
-}
-
+    -webkit-text-size-adjust: 100%}
 body {
-    margin: 0;
+    margin: 0 auto;
+    max-width: 800px;
 }
-
-/* HTML5 display definitions
-========================================================================== */
-body,
-article,
-section,
-footer,
-header,
-div,
-input,
-nav,
-article ol,
-article ul,
-blockquote,
-figure {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+details, main, summary {
+    display: block;
 }
-
-audio,
-canvas,
-progress,
-video {
-    display: inline-block;
-    /* 1 */
-    vertical-align: baseline;
-    /* 2 */
-}
-
-audio:not([controls]) {
-    display: none;
-    height: 0;
-}
-
-[hidden],
-template {
+[hidden], template {
     display: none;
 }
-
-/* Links
-========================================================================== */
 a {
-    background: transparent;
+    color: #CF8A00;
+    background-color: transparent;
 }
-
-a:active,
-a:hover {
+a:active, a:hover {
+    color: #CFCF00;
     outline: 0;
 }
-
-/* Text-level semantics
-========================================================================== */
-abbr {
-    letter-spacing: 0.1em;
-}
-
-abbr[title] {
-    border-bottom: 1px dotted;
-}
-
-b,
-strong {
-    font-weight: bold;
-}
-
-dfn {
-    font-style: italic;
-}
-
-mark {
-    background: #ff0;
-    color: #000;
-}
-
-small {
-    font-size: 70%;
-}
-
-sub,
-sup {
-    font-size: 75%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-sup {
-    top: -0.5em;
-}
-
-sub {
-    bottom: -0.25em;
-}
-
-em,
-i {
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-}
-
-/* Embedded content
-========================================================================== */
 img {
     border: 0;
 }
-
-svg:not(:root) {
-    overflow: hidden;
-}
-
-/* Grouping content
-========================================================================== */
 hr {
-    -moz-box-sizing: content-box;
     box-sizing: content-box;
     height: 0;
 }
-
 pre {
     overflow: auto;
 }
-
-code,
-kbd,
-pre,
-samp {
-    font-family: monospace, monospace;
+code, kbd, pre, samp {
+    font-size: 1em;
 }
-
-/* Tables
-========================================================================== */
-table {
+button, input, optgroup, select, textarea {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+button {
+    overflow: visible;
+}
+button, select {
+    text-transform: none;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+input {
+    line-height: normal;
+}
+input[type="checkbox"], input[type="radio"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+input[type="search"] {
+    -webkit-appearance: textfield;
+    box-sizing: content-box;
+}
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+fieldset {
+    border: none;
+    padding: 0;
+    margin: 0 2px;
+}
+legend {
+    border: 0;
+    padding: 0;
+}
+textarea {
+    overflow: auto;
+}
+optgroup {
+    font-weight: 700;
+}
+body {
+    background-color: #f0f0f0;
+    color: #353535;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1em;
+    line-height: 1.5em;
+}
+code, pre, kbd, samp, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Inconsolata', monospace;
+}
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5em;
+    margin: 0 0 .5em;
+}
+h1, .h1 {
+    font-size: 2em;
+}
+h2, .h2 {
+    font-size: 1.5em;
+}
+h3, .h3 {
+    font-size: 1.3em;
+}
+h4, .h4 {
+    font-size: 1.15em;
+}
+h5, .h5 {
+    font-size: 1em;
+}
+h6, .h6 {
+    font-size: .75em;
+    text-transform: uppercase;
+}
+p {
+    margin: 0 0 1em;
+}
+blockquote {
+    border-left: .1em solid #e2e5e9;
+    margin: 1.5em 0;
+    padding: 0 1.25em 0 1.24em;
+}
+hr {
+    border-color: #e2e5e9;
+    border-style: solid;
+    border-width: .1em;
+    margin: 2em 0;
+}
+ol ol li {
+    list-style-type: lower-alpha;
+}
+ol ol ol li {
+    list-style-type: lower-roman;
+}
+b, strong {
+    font-weight: 700;
+}
+small {
+    font-size: .8em;
+    line-height: 1.2em;
+}
+sub, sup {
+    font-size: .6em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+sup {
+    top: -.5em;
+}
+.row {
+    margin-left: -1.25em;
+}
+.col, .col-sm, .col-lg {
+    background-clip: content-box;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: -.25em;
+    min-height: 1px;
+    padding-left: 1.25em;
+    position: relative;
+    vertical-align: top;
+}
+.no-gutter {
+    padding-left: .25em;
+}
+.c12 {
+width: 100%}
+.c11 {
+width: 91.66%}
+.c10 {
+width: 83.33%}
+.c9 {
+width: 75%}
+.c8 {
+width: 66.66%}
+.c7 {
+width: 58.33%}
+.c6 {
+width: 50%}
+.c5 {
+width: 41.66%}
+.c4 {
+width: 33.33%}
+.c3 {
+width: 25%}
+.c2 {
+width: 16.66%}
+.c1 {
+width: 8.33%}
+@media (max-width:55em) {
+    .col-lg {
+        width: 100%;
+        margin-bottom: 1.25em;
+    }
+}
+@media (max-width:30em) {
+    .col {
+        width: 100%;
+        margin-bottom: 1.25em;
+    }
+}
+@media (min-width:56em) {
+    .hide-lg {
+        display: none;
+    }
+    .show-lg {
+        display: block;
+    }
+    .show-md, .show-sm {
+        display: none;
+    }
+}
+@media (max-width:55em) {
+    .hide-md {
+        display: none;
+    }
+    .show-md {
+        display: block;
+    }
+    .show-lg, .show-sm {
+        display: none;
+    }
+    .cm12 {
+    width: 100%}
+    .cm11 {
+    width: 91.66%}
+    .cm10 {
+    width: 83.33%}
+    .cm9 {
+    width: 75%}
+    .cm8 {
+    width: 66.66%}
+    .cm7 {
+    width: 58.33%}
+    .cm6 {
+    width: 50%}
+    .cm5 {
+    width: 41.66%}
+    .cm4 {
+    width: 33.33%}
+    .cm3 {
+    width: 25%}
+    .cm2 {
+    width: 16.66%}
+    .cm1 {
+    width: 8.33%}
+}
+@media (max-width:30em) {
+    .hide-sm {
+        display: none;
+    }
+    .hide-md, .show-sm {
+        display: block;
+    }
+    .show-lg, .show-md {
+        display: none;
+    }
+    .cs12 {
+    width: 100%}
+    .cs11 {
+    width: 91.66%}
+    .cs10 {
+    width: 83.33%}
+    .cs9 {
+    width: 75%}
+    .cs8 {
+    width: 66.66%}
+    .cs7 {
+    width: 58.33%}
+    .cs6 {
+    width: 50%}
+    .cs5 {
+    width: 41.66%}
+    .cs4 {
+    width: 33.33%}
+    .cs3 {
+    width: 25%}
+    .cs2 {
+    width: 16.66%}
+    .cs1 {
+    width: 8.33%}
+}
+.table {
     border-collapse: collapse;
     border-spacing: 0;
-}
-
-td,
-th {
-    padding: 0;
-}
-
-/* Images
-========================================================================== */
-img {
-    max-width: 100%;
-    display: block;
-    margin: inherit auto;
-}
-
-/* Configuration
-========================================================================== */
-/* Calculations
-========================================================================== */
-/* Mixins
-========================================================================== */
-/* Font themes
-========================================================================== */
-/* Defaults
-========================================================================== */
-html {
-    font-size: 16px;
-    font-size: 100%;
-    font-family: "Merriweather", Georgia, serif;
-    color: #222222;
-}
-
-* {
-    line-height: 26px;
-    line-height: 1.625rem;
-    margin: 0px 0px 26px;
-    margin: 0rem 0rem 1.625rem;
-}
-
-/* Paragraph
-========================================================================== */
-/* Headings
-========================================================================== */
-h1 {
-    font-size: 40px;
-    font-size: 2.5rem;
-    line-height: 52px;
-    line-height: 3.25rem;
-    margin-top: 104px;
-    margin-top: 6.5rem;
-    margin-bottom: 26px;
-    margin-bottom: 1.625rem;
-}
-
-h2 {
-    font-size: 27px;
-    font-size: 1.6875rem;
-    line-height: 39px;
-    line-height: 2.4375rem;
-    margin-top: 65px;
-    margin-top: 4.0625rem;
-    margin-bottom: 13px;
-    margin-bottom: 0.8125rem;
-}
-
-h3 {
-    font-size: 22px;
-    font-size: 1.375rem;
-    line-height: 26px;
-    line-height: 1.625rem;
-    margin-top: 52px;
-    margin-top: 3.25rem;
-    margin-bottom: 13px;
-    margin-bottom: 0.8125rem;
-}
-
-h4 {
-    font-size: 19.2px;
-    font-size: 1.2rem;
-    line-height: 26px;
-    line-height: 1.625rem;
-    margin-top: 39px;
-    margin-top: 2.4375rem;
-    margin-bottom: 13px;
-    margin-bottom: 0.8125rem;
-}
-
-h5 {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 26px;
-    line-height: 1.625rem;
-    margin-top: 65px;
-    margin-top: 4.0625rem;
-    margin-bottom: 13px;
-    margin-bottom: 0.8125rem;
-}
-
-h6 {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 26px;
-    line-height: 1.625rem;
-    margin-top: 65px;
-    margin-top: 4.0625rem;
-    margin-bottom: 13px;
-    margin-bottom: 0.8125rem;
-}
-
-h1 + h2 {
-    margin-top: 26px;
-    margin-top: 1.625rem;
-}
-
-h2 + h3, h3 + h4, h4 + h5 {
-    margin-top: 13px;
-    margin-top: 0.8125rem;
-}
-
-h5 + h6 {
-    margin-top: -13px;
-    margin-top: -0.8125rem;
-}
-
-h6 {
-    font-weight: normal;
-    font-style: italic;
-}
-
-/* Links
-========================================================================== */
-a {
-    color: #222222;
-    transition: all 0.3s;
-}
-a:hover {
-    color: #666;
-}
-a:visited {
-    color: #888;
-}
-a:visited:hover {
-    color: #666;
-}
-a:active {
-    color: red;
-}
-
-/* Figures & other elements
-========================================================================== */
-figcaption {
-    color: #222222;
-    font-style: italic;
-    font-size: 0.8125rem;
-    text-align: center;
-    margin-bottom: 0;
-    line-height: 26px;
-    line-height: 1.625rem;
-}
-
-blockquote {
-    padding-left: 1.4375rem;
-    font-style: italic;
-}
-
-cite {
-    font-style: normal;
-}
-
-figure blockquote {
-    padding: 26px 0px;
-    padding: 1.625rem 0rem;
-}
-figure blockquote p {
-    font-size: 27px;
-    font-size: 1.6875rem;
-    line-height: 39px;
-    line-height: 2.4375rem;
-}
-
-ul li, ol li {
-    margin-bottom: 0;
-}
-
-hr {
-    margin-top: 52px;
-    margin-top: 3.25rem;
-    margin-right: auto;
-    margin-bottom: 52px;
-    margin-bottom: 3.25rem;
-    margin-left: auto;
-    height: 26px;
-    height: 1.625rem;
-    color: #222222;
-    background-size: 100% 26px;
-    background-size: 100% 1.625rem;
-    background-image: linear-gradient(to bottom, transparent 1px, transparent 11px, #222222 11px, #222222 15px, transparent 15px, transparent 26px);
-    width: 100px;
-    display: block;
-    border: 0;
-}
-
-small {
-    line-height: 13px;
-    line-height: 0.8125rem;
-}
-
-.attention-grabber {
-    font-size: 19.2px;
-    font-size: 1.2rem;
-}
-
-/* Grid
-========================================================================== */
-.grid, .grid-double {
-    background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px);
-    background-position: left top;
-    background-repeat: repeat;
-    background-size: 100% 26px;
-    background-size: 100% 1.625rem;
-}
-
-.grid-double {
-    background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 13px, rgba(0, 170, 255, 0.2) 13px, transparent 14px, transparent 26px);
-}
-
-/* Gutenberg defaults
-========================================================================== */
-article, body > footer {
-    width: 80%;
-    margin: 0 auto;
-}
-
-.double-grid {
-    background-position-y: -32px;
-}
-
-.grid-off {
-    background-position-y: -64px;
-}
-
-.alignLeft {
+width: 100%}
+.table th, .table td {
+    padding: .5em;
     text-align: left;
 }
-
-.alignCenter {
-    text-align: center;
+.table tbody>:nth-child(2n-1) {
+    background-color: #e2e5e9;
 }
-
-.alignRight {
-    text-align: right;
+.sp-sm {
+    padding: 1em;
 }
-
-.uppercase {
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
+.sp-vert-sm {
+    padding-bottom: 1em;
+    padding-top: 1em;
 }
-
-/* Put your styles below this line
-========================================================================== */
-@media screen and (min-width: 40em) {
-    /* Mixins
-    ========================================================================== */
-body, html {
-    margin: 0;
-    width: 100%;
-    max-width: none;
+.sp-horiz-sm {
+    padding-left: 1em;
+    padding-right: 1em;
 }
-
-* {
-    max-width: 630px;
-    max-width: 35rem;
-    margin-left: auto !important;
-    margin-right: auto !important;
-    line-height: 31px;
-    line-height: 1.722222222222222rem;
-    margin-bottom: 31px;
-    margin-bottom: 1.722222222222222rem;
+.sp-md {
+    padding: 2em;
 }
-
-html {
-    font-size: 18px;
-    font-size: 1.125rem;
+.sp-vert-md {
+    padding-bottom: 2em;
+    padding-top: 2em;
 }
-
-.grid, .grid-double {
-    background-size: 100% 31px;
-    background-size: 100% 1.722222222222222rem;
+.sp-horiz-md {
+    padding-left: 2em;
+    padding-right: 2em;
 }
-
-.grid-double {
-    background-image: linear-gradient(to bottom, rgba(0, 170, 255, 0.3) 1px, transparent 1px, transparent 15.5px, rgba(0, 170, 255, 0.2) 15.5px, transparent 16.5px, transparent 31px);
+.sp-lg {
+    padding: 3em;
 }
-
-article {
-    max-width: 945px;
-    max-width: 52.5rem;
+.sp-vert-lg {
+    padding-bottom: 3em;
+    padding-top: 3em;
 }
-
-h1 {
-    font-size: 40px;
-    font-size: 2.5rem;
-    line-height: 62px;
-    line-height: 3.444444444444445rem;
-    margin-top: 124px;
-    margin-top: 6.888888888888889rem;
-    margin-bottom: 31px;
-    margin-bottom: 1.722222222222222rem;
+.sp-horiz-lg {
+    padding-left: 3em;
+    padding-right: 3em;
 }
-
-h2 {
-    font-size: 27px;
-    font-size: 1.6875rem;
-    line-height: 46.5px;
-    line-height: 2.583333333333334rem;
-    margin-top: 77.5px;
-    margin-top: 4.305555555555556rem;
-    margin-bottom: 15.5px;
-    margin-bottom: 0.861111111111111rem;
+@media (max-width:30em) {
+    .sp-sm {
+        padding: .5em;
+    }
+    .sp-vert-sm {
+        padding-bottom: .5em;
+        padding-top: .5em;
+    }
+    .sp-horiz-sm {
+        padding-left: .5em;
+        padding-right: .5em;
+    }
+    .sp-md {
+        padding: 1em;
+    }
+    .sp-vert-md {
+        padding-bottom: 1em;
+        padding-top: 1em;
+    }
+    .sp-horiz-md {
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+    .sp-lg {
+        padding: 1.5em;
+    }
+    .sp-vert-lg {
+        padding-bottom: 1.5em;
+        padding-top: 1.5em;
+    }
+    .sp-horiz-lg {
+        padding-left: 1.5em;
+        padding-right: 1.5em;
+    }
 }
-
-h3 {
-    font-size: 22px;
-    font-size: 1.375rem;
-    line-height: 31px;
-    line-height: 1.722222222222222rem;
-    margin-top: 62px;
-    margin-top: 3.444444444444445rem;
-    margin-bottom: 15.5px;
-    margin-bottom: 0.861111111111111rem;
-}
-
-h4 {
-    font-size: 19.2px;
-    font-size: 1.2rem;
-    line-height: 31px;
-    line-height: 1.722222222222222rem;
-    margin-top: 46.5px;
-    margin-top: 2.583333333333334rem;
-    margin-bottom: 15.5px;
-    margin-bottom: 0.861111111111111rem;
-}
-
-h5 {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 31px;
-    line-height: 1.722222222222222rem;
-    margin-top: 77.5px;
-    margin-top: 4.305555555555556rem;
-    margin-bottom: 15.5px;
-    margin-bottom: 0.861111111111111rem;
-}
-
-h6 {
-    font-size: 16px;
-    font-size: 1rem;
-    line-height: 31px;
-    line-height: 1.722222222222222rem;
-    margin-top: 77.5px;
-    margin-top: 4.305555555555556rem;
-    margin-bottom: 15.5px;
-    margin-bottom: 0.861111111111111rem;
-}
-
-h1 + h2 {
-    margin-top: 31px;
-    margin-top: 1.722222222222222rem;
-}
-
-h2 + h3, h3 + h4, h4 + h5 {
-    margin-top: 15.5px;
-    margin-top: 0.861111111111111rem;
-}
-
-h5 + h6 {
-    margin-top: -15.5px;
-    margin-top: -0.861111111111111rem;
-}
-
-figure blockquote {
-    padding: 62px 0px 31px;
-    padding: 3.444444444444445rem 0rem 1.722222222222222rem;
-    text-align: center;
-}
-figure blockquote p {
-    font-size: 27px;
-    font-size: 1.6875rem;
-    line-height: 46.5px;
-    line-height: 2.583333333333334rem;
-}
-
-figure.floatLeft,
-figure.floatRight {
-    max-width: 315px;
-    max-width: 17.5rem;
-    padding: 0px 31px;
-    padding: 0rem 1.722222222222222rem;
-}
-figure.floatLeft blockquote,
-figure.floatRight blockquote {
-    text-align: left;
-    padding: 0px;
-    padding: 0rem;
-}
-figure.floatLeft blockquote p,
-figure.floatRight blockquote p {
-    font-size: 19.2px;
-    font-size: 1.2rem;
-    line-height: 31px;
-    line-height: 1.722222222222222rem;
-}
-
-figcaption {
-    line-height: 31px;
-    line-height: 1.722222222222222rem;
-    margin-bottom: 0;
-}
-
-.floatLeft {
-    float: left;
-}
-
-.floatCenter {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.floatRight {
-    float: right;
-}
-
-blockquote {
-    padding-left: 2rem;
-}
-
-small {
-    line-height: 15.5px;
-    line-height: 0.861111111111111rem;
-}
-
-hr {
-    margin-top: 62px;
-    margin-top: 3.444444444444445rem;
-    margin-bottom: 62px;
-    margin-bottom: 3.444444444444445rem;
-    height: 31px;
-    height: 1.722222222222222rem;
-    background-size: 100% 31px;
-    background-size: 100% 1.722222222222222rem;
-    background-image: linear-gradient(to bottom, transparent 1px, transparent 13.5px, #222222 13.5px, #222222 17.5px, transparent 17.5px, transparent 31px);
-}
-
-.attention-grabber {
-    font-size: 19.2px;
-    font-size: 1.2rem;
-}
-}
-
-/***** MY STUFF *****/
-
-body {
-    margin: 0px auto 0px auto; width: 600px;
-    background-color: #FFF;
-}
-
-a {
-    font-style: italic;
-}
-
-h1,h2,h3,h4,h5,h6,nav a {
-    font-family: 'Lato', sans-serif;
-}
-
-nav {
-    padding-top: 20px;
-    text-align: right;
-    position:relative;
-}
-
-nav a {
-    font-weight: bold;
-    font-style: normal;
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #888;
-}
-
-nav h3 {
-    display: inline;
-    padding-left: 12px;
-}
-
-nav #logo h3 {
-    margin: 0;
-    padding: 0;
-    float: left;
-}
-
-footer {
-    font-style: italic;
-}
-
-div.info {
-    font-style: italic;
-}
-
-.invert, pre {
-    position: relative;
-    background-color: #222;
-    color: #EEE;
-    padding: 20px;
-    width: 100%;
-    left: -20px;
-}
-
-.invert {
-    width: calc(100% + 40px);
-}
-
-pre {
-    overflow: scroll;
-}
-
-pre::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 0;
-    height: 0;
-}
-
-.invert > p {
-    margin-bottom: 0;
-}
-
-p.caption {display: none;}
-
-/* Generated by pandoc. */
-table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode, table.sourceCode pre
-{ margin: 0; padding: 0; border: 0; vertical-align: baseline; border: none; }
-td.lineNumbers { border-right: 1px solid #AAAAAA; text-align: right; color: #AAAAAA; padding-right: 5px; padding-left: 5px; }
-td.sourceCode { padding-left: 5px; }
-.sourceCode span.kw { color: #007020; font-weight: bold; }
-.sourceCode span.dt { color: #902000; }
-.sourceCode span.dv { color: #40a070; }
-.sourceCode span.bn { color: #40a070; }
-.sourceCode span.fl { color: #40a070; }
-.sourceCode span.ch { color: #4070a0; }
-.sourceCode span.st { color: #4070a0; }
-.sourceCode span.co { color: #60a0b0; font-style: italic; }
-.sourceCode span.ot { color: #007020; }
-.sourceCode span.al { color: red; font-weight: bold; }
-.sourceCode span.fu { color: #06287e; }
-.sourceCode span.re { }
-.sourceCode span.er { color: red; font-weight: bold; }
+.codehilite .hll { background-color: #ffffcc }
+.codehilite .c { font-style: italic }
+.codehilite .err { border: 1px solid #FF0000 }
+.codehilite .k { font-weight: bold }
+.codehilite .cm { font-style: italic }
+.codehilite .c1 { font-style: italic }
+.codehilite .cs { font-style: italic }
+.codehilite .ge { font-style: italic }
+.codehilite .gh { font-weight: bold }
+.codehilite .gp { font-weight: bold }
+.codehilite .gs { font-weight: bold }
+.codehilite .gu { font-weight: bold }
+.codehilite .kc { font-weight: bold }
+.codehilite .kd { font-weight: bold }
+.codehilite .kn { font-weight: bold }
+.codehilite .kr { font-weight: bold }
+.codehilite .s { font-style: italic }
+.codehilite .nc { font-weight: bold }
+.codehilite .ni { font-weight: bold }
+.codehilite .ne { font-weight: bold }
+.codehilite .nn { font-weight: bold }
+.codehilite .nt { font-weight: bold }
+.codehilite .ow { font-weight: bold }
+.codehilite .sb { font-style: italic }
+.codehilite .sc { font-style: italic }
+.codehilite .sd { font-style: italic }
+.codehilite .s2 { font-style: italic }
+.codehilite .se { font-weight: bold; font-style: italic }
+.codehilite .sh { font-style: italic }
+.codehilite .si { font-weight: bold; font-style: italic }
+.codehilite .sx { font-style: italic }
+.codehilite .sr { font-style: italic }
+.codehilite .s1 { font-style: italic }
+.codehilite .ss { font-style: italic }
