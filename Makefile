@@ -3,6 +3,6 @@ site:
 	cd _site; \
 		git add --all; \
 		git commit -m "update $(date)"; \
-		git push -u origin master --force
+		git push -u origin master
 
 .PHONY: site
