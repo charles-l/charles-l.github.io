@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Here Be Dragons #1: OpenGL VAOs and VBOs
-date:2016-05-31
+date: 2016-05-31
 ---
 
 OpenGL is one of the worst APIs I've worked with. It's confusing, has awful error reporting, is poorly documented, segfaults in the strangest ways and doesn't sandbox anything (I've accidentally crashed my graphics driver a couple of times already).
