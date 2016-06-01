@@ -8,9 +8,9 @@ OpenGL is one of the worst APIs I've worked with. It's confusing, has awful erro
 
 It's terrible.
 
-![](/images/whocares.gif)
-
 But who cares?
+
+![](/images/whocares.gif)
 
 # WE CAN HAZ PRETTY GRAPHICS AND GAMES AND STUFF
 
