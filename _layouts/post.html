@@ -4,7 +4,7 @@ layout: default
 <h2>{{ page.title }}</h2>
 
 <div class="info">
-    Posted on {{ page.date }}
+    Posted on {{ page.date | date_to_string }}
 </div>
 
 {{ content }}
