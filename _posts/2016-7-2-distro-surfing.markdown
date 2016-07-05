@@ -49,7 +49,7 @@ To sum it up quickly, Void Linux is what ArchLinux is supposed to be. It uses an
 <br/><br/>Apart from the stupid command names, `xbps` is one of my favorite binary package managers. I thought `pacman` was fast - and it is, compared to `apt` - but it's not nearly as fast as `xbps`. I was this close to using it as my main Linux distro too, but...
 <br/><br/>It didn't have Crystal in it's package list. I didn't think that would be a problem, since I could just write the package myself and create a PR for the package repo. Arch has Crystal in its package list, so it can't be hard to support, right?
 <br/><br/>Then I realized that Void *only* supports the latest versions of packages, which is why they didn't have Crystal in the first place. Crystal uses a version of LLVM that's a year old, so instead of compromising the purity of the package list, Void just ignores Crystal, unless it updates to a newer version of LLVM. I can understand that, but it doesn't really meet my goals for day-to-day use, so Void had to go too.
-<br/><br/>I'll keep it in mind if I never need a pure, ArchLinux-like distro in the future.
+<br/><br/>I'll keep it in mind if I want a pure, ArchLinux-like distro in the future.
 
 ----
 
