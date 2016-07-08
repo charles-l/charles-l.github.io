@@ -20,4 +20,4 @@ The only other advantage to a simpler colorscheme is that I'm not constantly dow
 
 I haven't yet given up highlighted `ls`. I guess I could change my `ls` alias from `ls --colors=always'` to `ls -F`, but I find it mentally easier to glob colors than try to differentiate between filenames/directory names with slashes on them. I also think it's excusable because there's less linguistic meaning behind a list of filenames than a piece of code.
 
-In the end, I'm going to stick with my simpler colorscheme. If nothing else, it at prevents me from wasting time fiddling with my vimrc, and makes maintenance easier. Less is more!
+In the end, I'm going to stick with my simpler colorscheme. If nothing else, it at least prevents me from wasting time fiddling with my vimrc, and makes maintenance easier. Less is more!
