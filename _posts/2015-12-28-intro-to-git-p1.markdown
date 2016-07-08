@@ -17,7 +17,6 @@ img.middle {
 
 Well... the man pages are certainly stupid.
 
-<figure>
 ```
 GIT-REBASE(1)
 
@@ -31,8 +30,7 @@ SYNOPSIS
            --root [<branch>]
    git rebase --continue | --skip | --abort | --edit-todo
 ```
-<figcaption>Seriously, just look up your questions on stack overflow. You'll get better explanations/examples.</figcaption>
-</figure>
+<small>Seriously, just look up your questions on stack overflow. You'll get better explanations/examples.</small>
 
 I mean c'mon. I've haven't been this confused by a manpage since I tried to read `sudoers(5)`.
 
