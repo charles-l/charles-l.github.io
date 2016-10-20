@@ -5,7 +5,7 @@ post: # creates a new post
 	@while [ -z "$$POST" ]; do \
 		read -r -p "post title: " POST; \
 	done ; \
-	P="posts/`date '+%F'`-`echo $$POST | tr ' ' '-'`.markdown"; \
+	P="_posts/`date '+%F'`-`echo $$POST | tr ' ' '-'`.markdown"; \
 	touch $$P ; \
 	echo "---" >> $$P ; \
 	echo "layout: post" >> $$P ; \
