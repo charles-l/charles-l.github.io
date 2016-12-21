@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Redshift
+title:  redshift
 date:   2014-03-13 09:43:29
 categories: gamedev
 ---

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Here Be Dragons #1: OpenGL VAOs and VBOs
+title: here be dragons #1: OpenGL VAOs and VBOs
 date: 2016-05-31
 ---
 

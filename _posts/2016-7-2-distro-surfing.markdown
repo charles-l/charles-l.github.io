@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Distro Surfing
+title:  distro surfing
 date:   2016-07-02
 ---
 ![](/images/choices.gif) <br/>

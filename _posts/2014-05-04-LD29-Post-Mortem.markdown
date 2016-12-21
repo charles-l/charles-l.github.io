@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Ludum Dare 29 Post Mortem
+title:  ludum dare 29 post mortem
 date:   2014-05-04 08:19:29
 categories: gamedev
 ---

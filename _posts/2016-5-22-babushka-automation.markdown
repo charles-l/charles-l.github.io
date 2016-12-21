@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Babushka Automation
+title:  babushka automation
 date:   2016-05-22
 ---
 

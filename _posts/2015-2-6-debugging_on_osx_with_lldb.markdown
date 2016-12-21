@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Debugging on OSX with LLDB
+title: debugging on OSX with LLDB
 date: 2015-02-06 12:00:00
 ---
 

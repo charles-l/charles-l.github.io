@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Asus T100 and Linux
+title: asus t100 and linux
 date:   2015-05-13 09:43:29
 ---
 

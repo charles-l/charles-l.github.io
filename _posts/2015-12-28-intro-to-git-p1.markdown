@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Intro to Git (Part 1)
+title:  intro to git (part 1)
 date:   2015-12-28 09:43:29
 categories: git
 ---

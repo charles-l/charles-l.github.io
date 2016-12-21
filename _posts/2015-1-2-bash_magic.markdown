@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Bash Magic
+title: bash magic
 date: 2015-01-02
 ---
 
