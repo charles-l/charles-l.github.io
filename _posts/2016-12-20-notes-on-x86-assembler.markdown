@@ -63,7 +63,7 @@ Where is the `-3000` offset on the last line you ask? That has to be emitted as 
 
 x86 (at least in 32bit mode) only has two main sizes that I've used: bytes and words. Bytes are 8 bits and words are 32 bits (this is true for protected mode, [but they are 16 bits in real mode](https://en.wikipedia.org/wiki/IA-32#Operating_modes) - beware if you're working with kernel code).
 
-Words are written in reverse byte order, so `0xDEADBEEF` would be emitted as `0xEF` `0xBE` `0xAD` `0xDE`.
+Words are (usually) written in reverse byte order (little endian), so `0xDEADBEEF` would be emitted as `0xEF` `0xBE` `0xAD` `0xDE`.
 
 ## code+reg
 
