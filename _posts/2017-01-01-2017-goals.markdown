@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 2017 tech goals
-date:2017-01-01
+date: 2017-01-01
 ---
 
 Compilers are neat. This coming year I'm going to try and put special emphasis on compiler design. I'll use Scheme and ML (and possibly a tiny amount of C) to develop my language projects.
