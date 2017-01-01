@@ -10,7 +10,7 @@ post: # creates a new post
 	echo "---" >> $$P ; \
 	echo "layout: post" >> $$P ; \
 	echo "title: $$POST" >> $$P ; \
-	echo "date:`date '+%F'`" >> $$P ; \
+	echo "date: `date '+%F'`" >> $$P ; \
 	echo "---" >> $$P ; \
 	vim $$P
 

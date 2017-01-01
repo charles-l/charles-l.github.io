@@ -3,12 +3,10 @@ layout: default
 title: About
 ---
 
-![](/images/ninja.png)
+![ninja selfie](/images/ninja.jpg)
 
-    '((developer) (artist) (linux enthusiast) (student) (ninja))
+    '((software developer/hacker) (student) (ninja))
 
 * [GitHub](http://github.com/charles-l)
 * [Twitter](http://twitter.com/theninjacharlie)
-* [YouTube](http://youtube.com/thespastickangaroo)
 * [Itch](http://ninjacharlie.itch.io/)
-* [Art](http://dropr.com/ninjacharlie)
