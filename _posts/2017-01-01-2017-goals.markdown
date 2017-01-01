@@ -1,0 +1,18 @@
+---
+layout: post
+title: 2017 tech goals
+date:2017-01-01
+---
+
+Compilers are neat. This coming year I'm going to try and put special emphasis on compiler design. I'll use Scheme and ML (and possibly a tiny amount of C) to develop my language projects.
+
+My goals are to:
+
+* Release a 1.0 version of [my compiler backend](https://github.com/charles-l/dirt)
+* Write a formally verified backend.
+* Implement a lisp ([partly done already](https://github.com/charles-l/po) - but I got sidetracked).
+* Study for the CCNA over the summer (I really ought to know networking better)
+* Do a proper algorithms course ([maybe this one](https://www.coursera.org/specializations/data-structures-algorithms))
+* Read more classic CS books :)
+
+I think that'll be enough to keep me busy for a while. If not, I'll throw in some OS dev too ;)
