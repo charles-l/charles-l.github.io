@@ -1,9 +1,0 @@
----
-layout: post
-title: pointers
-date: 2017-06-27
----
-
-Pointers are a scary obstacle for many programmers. Whether they've hit a second semester C++ course that finally introduces the asterisk and ampersand for blahblabhlh
-
-The reason pointers can be confusing is because they're used for
