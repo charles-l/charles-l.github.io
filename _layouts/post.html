@@ -2,11 +2,9 @@
 layout: default
 ---
 <article class="h-entry">
-	<h2 class="p-name"><a class="u-url" href="https://charliethe.ninja{{page.url}}">{{ page.title }}</a></h2>
+	<h2 class="p-name"><a class="u-url" href="{{site.url}}/{{page.url}}">{{ page.title }}</a></h2>
 
-	<div class="info">
-	Posted on <span class="dt-published">{{ page.date | date_to_string }}</span>
-	</div>
+	<span class="dt-published">{{ page.date | date_to_string }}</span>
 
 	<div class="e-content">
 	{{ content }}

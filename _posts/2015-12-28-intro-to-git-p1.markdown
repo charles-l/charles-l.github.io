@@ -17,6 +17,7 @@ img.middle {
 
 Well... the man pages are certainly stupid.
 
+<figure markdown="1">
 ```
 GIT-REBASE(1)
 
@@ -30,7 +31,8 @@ SYNOPSIS
            --root [<branch>]
    git rebase --continue | --skip | --abort | --edit-todo
 ```
-<small>Seriously, just look up your questions on stack overflow. You'll get better explanations/examples.</small>
+<figcaption>Seriously, just look up your questions on stack overflow. You'll get better explanations/examples.</figcaption>
+</figure>
 
 I mean c'mon. I've haven't been this confused by a manpage since I tried to read `sudoers(5)`.
 
@@ -76,7 +78,7 @@ The main branch is called `master`:
 
 Not bad so far.
 
-<img src="/images/piece_o_cake.jpg" width=200/>
+<img src="/images/piece_o_cake.jpg" width="200" />
 
 
 ### Your code is in many places
@@ -89,11 +91,11 @@ Whenever you modify the git history or add a new commit, you are operating on yo
 
 When you are working with others, you'll often have a central repo called a "remote". You *push* and *pull* code to and from a remote.
 
-<img class="middle" src="/images/push_pull.png"/>
+![pushing/pulling](/images/push_pull.png)
 
-<div class="invert">
-<b>REMEMBER!</b> No one can see your local commits until you push them to the remote
-</div>
+<aside>
+<h4>REMEMBER!</h4> No one can see your local commits until you push them to the remote
+</aside>
 
 You don't necessarily have to push to/pull from the remote though. If you want, you can push to your dog's repo, then pull code from Grandma's repo (if you have the IPs/permissions).
 

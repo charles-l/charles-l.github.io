@@ -14,10 +14,10 @@ title: Home
 </ul>
 
 <h2>Blog</h2>
-<ul>
+<ul class="h-feed">
     {% for post in site.posts %}
-        <li>
-            <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date_to_string }}
+        <li class="h-entry">
+	   <a class="u-url p-name" href="{{ post.url }}">{{ post.title }}</a> - <span class="dt-published">{{ post.date | date_to_string }}</span>
         </li>
     {% endfor %}
 </ul>

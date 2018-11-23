@@ -65,9 +65,6 @@ If you're an indie, who is trying to release a game, or you're just interested i
 
 Welp, that's all. I hope this will help a beginner to start out and will warn of some of the big pitfalls I fell in. As it's my first game, I've still got a *lot* to learn, but I'm still really happy I've done it. If you're interested in buying Redshift, you can use the widget below ;)
 
-Thanks for reading,<br/>
-\-Charlie
-
 <br/>
 <br/>
 <iframe src="//itch.io/embed/826" width="552" height="167" frameborder="0"></iframe>

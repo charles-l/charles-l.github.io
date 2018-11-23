@@ -2,14 +2,11 @@ help: # shows help
 	@cat Makefile | grep ':' | grep '#' | grep -v 'Makefile' | tr -d ':' | column -t -s'#'
 
 post: # creates a new post
-	@while [ -z "$$POST" ]; do \
-		read -r -p "post title: " POST; \
-	done ; \
-	P="_posts/`date '+%F'`-`echo $$POST | tr ' ' '-'`.markdown"; \
+	P="_posts/`date '+%F'`-`echo ${POSTNAME} | tr ' ' '-'`.markdown"; \
 	touch $$P ; \
 	echo "---" >> $$P ; \
 	echo "layout: post" >> $$P ; \
-	echo "title: $$POST" >> $$P ; \
+	echo "title: ${POSTNAME}" >> $$P ; \
 	echo "date: `date '+%F'`" >> $$P ; \
 	echo "---" >> $$P ; \
 	vim $$P
