@@ -10,7 +10,7 @@ It's terrible.
 
 But who cares?
 
-![](/images/whocares.gif)
+![]({{site.url}}/images/whocares.gif)
 
 # WE CAN HAZ PRETTY GRAPHICS AND GAMES AND STUFF
 
@@ -35,7 +35,7 @@ Of course, this is terrible and gross in so many ways, but it at least makes sen
 
 **Fear not! This is cleaned up in OpenGL 3**
 
-![](/images/abstraction.png)
+![]({{site.url}}/images/abstraction.png)
 
 # Introducing two brand new 2008 OpenGL features: VAOs and VBOs!
 

@@ -66,32 +66,32 @@ There are many GUIs available for git. They can be useful sometimes when visuali
 
 Git history is stored in a series of commits (a commit is a snapshot of the code).
 
-![git_1](/images/git_1.png)
+![git_1]({{site.url}}/images/git_1.png)
 
 Commits are stored in branches.
 
-![git_2](/images/git_2.png)
+![git_2]({{site.url}}/images/git_2.png)
 
 The main branch is called `master`:
 
-![git_3](/images/git_3.png)
+![git_3]({{site.url}}/images/git_3.png)
 
 Not bad so far.
 
-<img src="/images/piece_o_cake.jpg" width="200" />
+<img src="{{site.url}}/images/piece_o_cake.jpg" width="200" />
 
 
 ### Your code is in many places
 
 If git is anything, it's redundant. You, your fellow developer, your grandmother and your dog all have their own copy of the entire codebase.
 
-![repo](/images/repo.png)
+![repo]({{site.url}}/images/repo.png)
 
 Whenever you modify the git history or add a new commit, you are operating on your *local* repository.
 
 When you are working with others, you'll often have a central repo called a "remote". You *push* and *pull* code to and from a remote.
 
-![pushing/pulling](/images/push_pull.png)
+![pushing/pulling]({{site.url}}/images/push_pull.png)
 
 <aside>
 <h4>REMEMBER!</h4> No one can see your local commits until you push them to the remote
@@ -127,7 +127,7 @@ git push origin master # (3.)
 3. Push the `master` branch to `origin` (type in your GitHub user and password when the prompts appear).
 4. Do a little dance.
 
-<img class="middle" src="/images/dancing_groot2.gif" width="300"/>
+<img class="middle" src="{{site.url}}/images/dancing_groot2.gif" width="300"/>
 
 Run the above commands anytime you want to add a new commit.
 
@@ -139,7 +139,7 @@ git pull origin master #(1.)
 1. Pull the code from the master branch of the remote (type in your GitHub user and password when the prompts appear).
 2. Do another little dance.
 
-<img class="middle" src="/images/dancing_groot.gif" width="300"/>
+<img class="middle" src="{{site.url}}/images/dancing_groot.gif" width="300"/>
 
 ### What you now know
 

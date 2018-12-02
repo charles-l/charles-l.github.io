@@ -4,7 +4,7 @@ title:  distro surfing
 date:   2016-07-02
 ---
 <figure markdown="1">
-![](/images/choices.gif)
+![]({{site.url}}/images/choices.gif)
 <figcaption>An accurate reenactment of me on the day this whole thing started</figcaption>
 </figure>
 
@@ -16,14 +16,14 @@ I've used everything from RedHat to Debian over the last few years, and finally 
 Yes, I'm one of "those people" that hates `systemd` since it doesn't fit the Unix philosophy. I somewhat understand its appeal for standardizing servers for cloud-based deployments, and would even be alright with it, if it were only an init system. But it's not just an init system. It's a political project that's taking over more and more of the Linux userspace. It's got stupid, poorly written, tightly coupled components that *EVERYONE* is adopting. It's limiting user choice, since so many projects require it as a hard dependency now (though I've figured out hacks to get around that).
 
     Suffice to say, I hate `systemd`, and am very frustrated that Arch adopted it, since it's not clean and seems extremely Micro$oft to me.
-![](/images/systemd.gif)
+![]({{site.url}}/images/systemd.gif)
 
 Uh...
 
 Well, it was actually just that one reason :P
 
 # Time to distro surf!
-![](/images/distrowatch.jpg)
+![]({{site.url}}/images/distrowatch.jpg)
 
 Over the course of a few weeks, I downloaded, installed, and used a different distro every couple of days to see if I liked it. Here are the results:
 

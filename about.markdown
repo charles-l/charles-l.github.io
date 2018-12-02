@@ -3,9 +3,7 @@ layout: default
 title: About
 ---
 
-![ninja selfie](/images/ninja.jpg)
-
-    '((software developer/hacker) (student) (ninja))
+![ninja selfie]({{site.url}}/images/ninja.jpg)
 
 * [GitHub](http://github.com/charles-l)
 * [Twitter](http://twitter.com/theninjacharlie)

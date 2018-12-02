@@ -17,7 +17,7 @@ title: Home
 <ul class="h-feed">
     {% for post in site.posts %}
         <li class="h-entry">
-	   <a class="u-url p-name" href="{{ post.url }}">{{ post.title }}</a> - <span class="dt-published">{{ post.date | date_to_string }}</span>
+		<a class="u-url p-name" href="{{site.url}}{{ post.url }}">{{ post.title }}</a> - <span class="dt-published">{{ post.date | date_to_string }}</span>
         </li>
     {% endfor %}
 </ul>
