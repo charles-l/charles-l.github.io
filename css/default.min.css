@@ -1,12 +1,10 @@
 a{color:#CF8A00;background-color:transparent}
-body{margin:0 auto;max-width:800px}
+body{margin:0 auto;max-width:820px; padding: 0 10px 0 10px;}
 body{background-color:#f0f0f0;color:#353535;font-family:sans-serif;font-size:1.1em;line-height:1.5em}
 a:active,a:hover{color:#CFCF00;outline:0}
-img{border:0}
-header,code,pre,kbd,samp,h1,h2,h3,h4,h5,h6{font-family:monospace}
-header{
-	margin: 2em 0 2em;
-}
+img{border:0;max-width: 100%;}
+header,code,pre,kbd,samp,h1,h2,h3,h4,h5,h6{font-family:monospace;overflow-x:auto;}
+header{margin: 2em 0 2em;}
 h1,h2,h3,h4,h5,h6{line-height:1.5em;margin:0 0 .5em}
 h1{font-size:2em}
 h2{font-size:1.5em}
