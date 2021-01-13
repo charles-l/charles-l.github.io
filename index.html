@@ -22,7 +22,7 @@ title: Home
 
 <h2>blog</h2>
 <ul class="h-feed">
-    {% for post in site.posts %}
+    {% for post in site.posts limit:5 %}
         <li class="h-entry">
 		<a class="u-url p-name" href="{{site.url}}{{ post.url }}">{{ post.title }}</a> - <span class="dt-published">{{ post.date | date_to_string }}</span>
         </li>
